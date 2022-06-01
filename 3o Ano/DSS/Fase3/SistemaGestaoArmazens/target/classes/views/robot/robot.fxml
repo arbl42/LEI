@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8"
+      fx:controller="SGA.Controller.robot.RobotController">
+    <TableView fx:id="table" layoutX="40.0" layoutY="84.0" prefHeight="270.0" prefWidth="519.0">
+        <columns>
+            <TableColumn prefWidth="129.25" style="-fx-alignment: center;" text="ID"/>
+            <TableColumn prefWidth="129.25" style="-fx-alignment: center;" text="Tipo"/>
+            <TableColumn prefWidth="129.25" style="-fx-alignment: center;" text="Localização"/>
+            <TableColumn prefWidth="129.25" style="-fx-alignment: center;" text="Gestor"/>
+        </columns>
+    </TableView>
+    <Button fx:id="back" layoutY="1.0" mnemonicParsing="false" onMouseReleased="#back" prefHeight="6.0" prefWidth="42.0"
+            style="-fx-background-color: #f3f3f3;" text="&lt;-"/>
+    <Text layoutX="96.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ordens de transporte pendentes">
+        <font>
+            <Font size="30.0"/>
+        </font>
+    </Text>
+</Pane>

@@ -1,0 +1,7 @@
+BEBIDAS:
+    * 1; "Coca-cola"; 1.00; 2
+    * 2; "água" ; 0.40 ; 1 
+CARNE:
+    * 3; "bife de vaca"; 7.00; 1
+ENLATADOS:
+    * 4; "salsichas"; 1.99; 4        

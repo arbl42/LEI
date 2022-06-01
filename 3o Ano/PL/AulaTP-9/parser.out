@@ -1,0 +1,470 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> calculadora
+Rule 1     calculadora -> comandos
+Rule 2     comandos -> comandos comando
+Rule 3     comandos -> <empty>
+Rule 4     comando -> $ ID
+Rule 5     comando -> ? ID
+Rule 6     comando -> ! expressao
+Rule 7     comando -> ID = expressao
+Rule 8     comando -> ! !
+Rule 9     expressao -> expressao + termo
+Rule 10    expressao -> expressao - termo
+Rule 11    expressao -> termo
+Rule 12    termo -> termo * fator
+Rule 13    termo -> termo / fator
+Rule 14    termo -> fator
+Rule 15    fator -> NUM
+Rule 16    fator -> ID
+Rule 17    fator -> ( expressao )
+
+Terminals, with rules where they appear
+
+!                    : 6 8 8
+$                    : 4
+(                    : 17
+)                    : 17
+*                    : 12
++                    : 9
+-                    : 10
+/                    : 13
+=                    : 7
+?                    : 5
+ID                   : 4 5 7 16
+NUM                  : 15
+error                : 
+
+Nonterminals, with rules where they appear
+
+calculadora          : 0
+comando              : 2
+comandos             : 1 2
+expressao            : 6 7 9 10 17
+fator                : 12 13 14
+termo                : 9 10 11 12 13
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . calculadora
+    (1) calculadora -> . comandos
+    (2) comandos -> . comandos comando
+    (3) comandos -> .
+
+    $               reduce using rule 3 (comandos -> .)
+    ?               reduce using rule 3 (comandos -> .)
+    !               reduce using rule 3 (comandos -> .)
+    ID              reduce using rule 3 (comandos -> .)
+    $end            reduce using rule 3 (comandos -> .)
+
+    calculadora                    shift and go to state 1
+    comandos                       shift and go to state 2
+
+state 1
+
+    (0) S' -> calculadora .
+
+
+
+state 2
+
+    (1) calculadora -> comandos .
+    (2) comandos -> comandos . comando
+    (4) comando -> . $ ID
+    (5) comando -> . ? ID
+    (6) comando -> . ! expressao
+    (7) comando -> . ID = expressao
+    (8) comando -> . ! !
+
+    $end            reduce using rule 1 (calculadora -> comandos .)
+    $               shift and go to state 4
+    ?               shift and go to state 6
+    !               shift and go to state 7
+    ID              shift and go to state 5
+
+    comando                        shift and go to state 3
+
+state 3
+
+    (2) comandos -> comandos comando .
+
+    $               reduce using rule 2 (comandos -> comandos comando .)
+    ?               reduce using rule 2 (comandos -> comandos comando .)
+    !               reduce using rule 2 (comandos -> comandos comando .)
+    ID              reduce using rule 2 (comandos -> comandos comando .)
+    $end            reduce using rule 2 (comandos -> comandos comando .)
+
+
+state 4
+
+    (4) comando -> $ . ID
+
+    ID              shift and go to state 8
+
+
+state 5
+
+    (7) comando -> ID . = expressao
+
+    =               shift and go to state 9
+
+
+state 6
+
+    (5) comando -> ? . ID
+
+    ID              shift and go to state 10
+
+
+state 7
+
+    (6) comando -> ! . expressao
+    (8) comando -> ! . !
+    (9) expressao -> . expressao + termo
+    (10) expressao -> . expressao - termo
+    (11) expressao -> . termo
+    (12) termo -> . termo * fator
+    (13) termo -> . termo / fator
+    (14) termo -> . fator
+    (15) fator -> . NUM
+    (16) fator -> . ID
+    (17) fator -> . ( expressao )
+
+    !               shift and go to state 11
+    NUM             shift and go to state 15
+    ID              shift and go to state 16
+    (               shift and go to state 17
+
+    expressao                      shift and go to state 12
+    termo                          shift and go to state 13
+    fator                          shift and go to state 14
+
+state 8
+
+    (4) comando -> $ ID .
+
+    $               reduce using rule 4 (comando -> $ ID .)
+    ?               reduce using rule 4 (comando -> $ ID .)
+    !               reduce using rule 4 (comando -> $ ID .)
+    ID              reduce using rule 4 (comando -> $ ID .)
+    $end            reduce using rule 4 (comando -> $ ID .)
+
+
+state 9
+
+    (7) comando -> ID = . expressao
+    (9) expressao -> . expressao + termo
+    (10) expressao -> . expressao - termo
+    (11) expressao -> . termo
+    (12) termo -> . termo * fator
+    (13) termo -> . termo / fator
+    (14) termo -> . fator
+    (15) fator -> . NUM
+    (16) fator -> . ID
+    (17) fator -> . ( expressao )
+
+    NUM             shift and go to state 15
+    ID              shift and go to state 16
+    (               shift and go to state 17
+
+    expressao                      shift and go to state 18
+    termo                          shift and go to state 13
+    fator                          shift and go to state 14
+
+state 10
+
+    (5) comando -> ? ID .
+
+    $               reduce using rule 5 (comando -> ? ID .)
+    ?               reduce using rule 5 (comando -> ? ID .)
+    !               reduce using rule 5 (comando -> ? ID .)
+    ID              reduce using rule 5 (comando -> ? ID .)
+    $end            reduce using rule 5 (comando -> ? ID .)
+
+
+state 11
+
+    (8) comando -> ! ! .
+
+    $               reduce using rule 8 (comando -> ! ! .)
+    ?               reduce using rule 8 (comando -> ! ! .)
+    !               reduce using rule 8 (comando -> ! ! .)
+    ID              reduce using rule 8 (comando -> ! ! .)
+    $end            reduce using rule 8 (comando -> ! ! .)
+
+
+state 12
+
+    (6) comando -> ! expressao .
+    (9) expressao -> expressao . + termo
+    (10) expressao -> expressao . - termo
+
+    $               reduce using rule 6 (comando -> ! expressao .)
+    ?               reduce using rule 6 (comando -> ! expressao .)
+    !               reduce using rule 6 (comando -> ! expressao .)
+    ID              reduce using rule 6 (comando -> ! expressao .)
+    $end            reduce using rule 6 (comando -> ! expressao .)
+    +               shift and go to state 19
+    -               shift and go to state 20
+
+
+state 13
+
+    (11) expressao -> termo .
+    (12) termo -> termo . * fator
+    (13) termo -> termo . / fator
+
+    +               reduce using rule 11 (expressao -> termo .)
+    -               reduce using rule 11 (expressao -> termo .)
+    $               reduce using rule 11 (expressao -> termo .)
+    ?               reduce using rule 11 (expressao -> termo .)
+    !               reduce using rule 11 (expressao -> termo .)
+    ID              reduce using rule 11 (expressao -> termo .)
+    $end            reduce using rule 11 (expressao -> termo .)
+    )               reduce using rule 11 (expressao -> termo .)
+    *               shift and go to state 21
+    /               shift and go to state 22
+
+
+state 14
+
+    (14) termo -> fator .
+
+    *               reduce using rule 14 (termo -> fator .)
+    /               reduce using rule 14 (termo -> fator .)
+    +               reduce using rule 14 (termo -> fator .)
+    -               reduce using rule 14 (termo -> fator .)
+    $               reduce using rule 14 (termo -> fator .)
+    ?               reduce using rule 14 (termo -> fator .)
+    !               reduce using rule 14 (termo -> fator .)
+    ID              reduce using rule 14 (termo -> fator .)
+    $end            reduce using rule 14 (termo -> fator .)
+    )               reduce using rule 14 (termo -> fator .)
+
+
+state 15
+
+    (15) fator -> NUM .
+
+    *               reduce using rule 15 (fator -> NUM .)
+    /               reduce using rule 15 (fator -> NUM .)
+    +               reduce using rule 15 (fator -> NUM .)
+    -               reduce using rule 15 (fator -> NUM .)
+    $               reduce using rule 15 (fator -> NUM .)
+    ?               reduce using rule 15 (fator -> NUM .)
+    !               reduce using rule 15 (fator -> NUM .)
+    ID              reduce using rule 15 (fator -> NUM .)
+    $end            reduce using rule 15 (fator -> NUM .)
+    )               reduce using rule 15 (fator -> NUM .)
+
+
+state 16
+
+    (16) fator -> ID .
+
+    *               reduce using rule 16 (fator -> ID .)
+    /               reduce using rule 16 (fator -> ID .)
+    +               reduce using rule 16 (fator -> ID .)
+    -               reduce using rule 16 (fator -> ID .)
+    $               reduce using rule 16 (fator -> ID .)
+    ?               reduce using rule 16 (fator -> ID .)
+    !               reduce using rule 16 (fator -> ID .)
+    ID              reduce using rule 16 (fator -> ID .)
+    $end            reduce using rule 16 (fator -> ID .)
+    )               reduce using rule 16 (fator -> ID .)
+
+
+state 17
+
+    (17) fator -> ( . expressao )
+    (9) expressao -> . expressao + termo
+    (10) expressao -> . expressao - termo
+    (11) expressao -> . termo
+    (12) termo -> . termo * fator
+    (13) termo -> . termo / fator
+    (14) termo -> . fator
+    (15) fator -> . NUM
+    (16) fator -> . ID
+    (17) fator -> . ( expressao )
+
+    NUM             shift and go to state 15
+    ID              shift and go to state 16
+    (               shift and go to state 17
+
+    expressao                      shift and go to state 23
+    termo                          shift and go to state 13
+    fator                          shift and go to state 14
+
+state 18
+
+    (7) comando -> ID = expressao .
+    (9) expressao -> expressao . + termo
+    (10) expressao -> expressao . - termo
+
+    $               reduce using rule 7 (comando -> ID = expressao .)
+    ?               reduce using rule 7 (comando -> ID = expressao .)
+    !               reduce using rule 7 (comando -> ID = expressao .)
+    ID              reduce using rule 7 (comando -> ID = expressao .)
+    $end            reduce using rule 7 (comando -> ID = expressao .)
+    +               shift and go to state 19
+    -               shift and go to state 20
+
+
+state 19
+
+    (9) expressao -> expressao + . termo
+    (12) termo -> . termo * fator
+    (13) termo -> . termo / fator
+    (14) termo -> . fator
+    (15) fator -> . NUM
+    (16) fator -> . ID
+    (17) fator -> . ( expressao )
+
+    NUM             shift and go to state 15
+    ID              shift and go to state 16
+    (               shift and go to state 17
+
+    termo                          shift and go to state 24
+    fator                          shift and go to state 14
+
+state 20
+
+    (10) expressao -> expressao - . termo
+    (12) termo -> . termo * fator
+    (13) termo -> . termo / fator
+    (14) termo -> . fator
+    (15) fator -> . NUM
+    (16) fator -> . ID
+    (17) fator -> . ( expressao )
+
+    NUM             shift and go to state 15
+    ID              shift and go to state 16
+    (               shift and go to state 17
+
+    termo                          shift and go to state 25
+    fator                          shift and go to state 14
+
+state 21
+
+    (12) termo -> termo * . fator
+    (15) fator -> . NUM
+    (16) fator -> . ID
+    (17) fator -> . ( expressao )
+
+    NUM             shift and go to state 15
+    ID              shift and go to state 16
+    (               shift and go to state 17
+
+    fator                          shift and go to state 26
+
+state 22
+
+    (13) termo -> termo / . fator
+    (15) fator -> . NUM
+    (16) fator -> . ID
+    (17) fator -> . ( expressao )
+
+    NUM             shift and go to state 15
+    ID              shift and go to state 16
+    (               shift and go to state 17
+
+    fator                          shift and go to state 27
+
+state 23
+
+    (17) fator -> ( expressao . )
+    (9) expressao -> expressao . + termo
+    (10) expressao -> expressao . - termo
+
+    )               shift and go to state 28
+    +               shift and go to state 19
+    -               shift and go to state 20
+
+
+state 24
+
+    (9) expressao -> expressao + termo .
+    (12) termo -> termo . * fator
+    (13) termo -> termo . / fator
+
+    +               reduce using rule 9 (expressao -> expressao + termo .)
+    -               reduce using rule 9 (expressao -> expressao + termo .)
+    $               reduce using rule 9 (expressao -> expressao + termo .)
+    ?               reduce using rule 9 (expressao -> expressao + termo .)
+    !               reduce using rule 9 (expressao -> expressao + termo .)
+    ID              reduce using rule 9 (expressao -> expressao + termo .)
+    $end            reduce using rule 9 (expressao -> expressao + termo .)
+    )               reduce using rule 9 (expressao -> expressao + termo .)
+    *               shift and go to state 21
+    /               shift and go to state 22
+
+
+state 25
+
+    (10) expressao -> expressao - termo .
+    (12) termo -> termo . * fator
+    (13) termo -> termo . / fator
+
+    +               reduce using rule 10 (expressao -> expressao - termo .)
+    -               reduce using rule 10 (expressao -> expressao - termo .)
+    $               reduce using rule 10 (expressao -> expressao - termo .)
+    ?               reduce using rule 10 (expressao -> expressao - termo .)
+    !               reduce using rule 10 (expressao -> expressao - termo .)
+    ID              reduce using rule 10 (expressao -> expressao - termo .)
+    $end            reduce using rule 10 (expressao -> expressao - termo .)
+    )               reduce using rule 10 (expressao -> expressao - termo .)
+    *               shift and go to state 21
+    /               shift and go to state 22
+
+
+state 26
+
+    (12) termo -> termo * fator .
+
+    *               reduce using rule 12 (termo -> termo * fator .)
+    /               reduce using rule 12 (termo -> termo * fator .)
+    +               reduce using rule 12 (termo -> termo * fator .)
+    -               reduce using rule 12 (termo -> termo * fator .)
+    $               reduce using rule 12 (termo -> termo * fator .)
+    ?               reduce using rule 12 (termo -> termo * fator .)
+    !               reduce using rule 12 (termo -> termo * fator .)
+    ID              reduce using rule 12 (termo -> termo * fator .)
+    $end            reduce using rule 12 (termo -> termo * fator .)
+    )               reduce using rule 12 (termo -> termo * fator .)
+
+
+state 27
+
+    (13) termo -> termo / fator .
+
+    *               reduce using rule 13 (termo -> termo / fator .)
+    /               reduce using rule 13 (termo -> termo / fator .)
+    +               reduce using rule 13 (termo -> termo / fator .)
+    -               reduce using rule 13 (termo -> termo / fator .)
+    $               reduce using rule 13 (termo -> termo / fator .)
+    ?               reduce using rule 13 (termo -> termo / fator .)
+    !               reduce using rule 13 (termo -> termo / fator .)
+    ID              reduce using rule 13 (termo -> termo / fator .)
+    $end            reduce using rule 13 (termo -> termo / fator .)
+    )               reduce using rule 13 (termo -> termo / fator .)
+
+
+state 28
+
+    (17) fator -> ( expressao ) .
+
+    *               reduce using rule 17 (fator -> ( expressao ) .)
+    /               reduce using rule 17 (fator -> ( expressao ) .)
+    +               reduce using rule 17 (fator -> ( expressao ) .)
+    -               reduce using rule 17 (fator -> ( expressao ) .)
+    $               reduce using rule 17 (fator -> ( expressao ) .)
+    ?               reduce using rule 17 (fator -> ( expressao ) .)
+    !               reduce using rule 17 (fator -> ( expressao ) .)
+    ID              reduce using rule 17 (fator -> ( expressao ) .)
+    $end            reduce using rule 17 (fator -> ( expressao ) .)
+    )               reduce using rule 17 (fator -> ( expressao ) .)
+

@@ -1,0 +1,202 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> lista
+Rule 1     lista -> categorias
+Rule 2     categorias -> categoria
+Rule 3     categorias -> categoria categorias
+Rule 4     categoria -> nome : produtos
+Rule 5     nome -> ID
+Rule 6     produtos -> produto
+Rule 7     produtos -> produto produtos
+Rule 8     produto -> * INT ; STR ; FLOAT ; INT
+
+Terminals, with rules where they appear
+
+*                    : 8
+:                    : 4
+;                    : 8 8 8
+FLOAT                : 8
+ID                   : 5
+INT                  : 8 8
+STR                  : 8
+error                : 
+
+Nonterminals, with rules where they appear
+
+categoria            : 2 3
+categorias           : 1 3
+lista                : 0
+nome                 : 4
+produto              : 6 7
+produtos             : 4 7
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . lista
+    (1) lista -> . categorias
+    (2) categorias -> . categoria
+    (3) categorias -> . categoria categorias
+    (4) categoria -> . nome : produtos
+    (5) nome -> . ID
+
+    ID              shift and go to state 5
+
+    lista                          shift and go to state 1
+    categorias                     shift and go to state 2
+    categoria                      shift and go to state 3
+    nome                           shift and go to state 4
+
+state 1
+
+    (0) S' -> lista .
+
+
+
+state 2
+
+    (1) lista -> categorias .
+
+    $end            reduce using rule 1 (lista -> categorias .)
+
+
+state 3
+
+    (2) categorias -> categoria .
+    (3) categorias -> categoria . categorias
+    (2) categorias -> . categoria
+    (3) categorias -> . categoria categorias
+    (4) categoria -> . nome : produtos
+    (5) nome -> . ID
+
+    $end            reduce using rule 2 (categorias -> categoria .)
+    ID              shift and go to state 5
+
+    categoria                      shift and go to state 3
+    categorias                     shift and go to state 6
+    nome                           shift and go to state 4
+
+state 4
+
+    (4) categoria -> nome . : produtos
+
+    :               shift and go to state 7
+
+
+state 5
+
+    (5) nome -> ID .
+
+    :               reduce using rule 5 (nome -> ID .)
+
+
+state 6
+
+    (3) categorias -> categoria categorias .
+
+    $end            reduce using rule 3 (categorias -> categoria categorias .)
+
+
+state 7
+
+    (4) categoria -> nome : . produtos
+    (6) produtos -> . produto
+    (7) produtos -> . produto produtos
+    (8) produto -> . * INT ; STR ; FLOAT ; INT
+
+    *               shift and go to state 10
+
+    produtos                       shift and go to state 8
+    produto                        shift and go to state 9
+
+state 8
+
+    (4) categoria -> nome : produtos .
+
+    ID              reduce using rule 4 (categoria -> nome : produtos .)
+    $end            reduce using rule 4 (categoria -> nome : produtos .)
+
+
+state 9
+
+    (6) produtos -> produto .
+    (7) produtos -> produto . produtos
+    (6) produtos -> . produto
+    (7) produtos -> . produto produtos
+    (8) produto -> . * INT ; STR ; FLOAT ; INT
+
+    ID              reduce using rule 6 (produtos -> produto .)
+    $end            reduce using rule 6 (produtos -> produto .)
+    *               shift and go to state 10
+
+    produto                        shift and go to state 9
+    produtos                       shift and go to state 11
+
+state 10
+
+    (8) produto -> * . INT ; STR ; FLOAT ; INT
+
+    INT             shift and go to state 12
+
+
+state 11
+
+    (7) produtos -> produto produtos .
+
+    ID              reduce using rule 7 (produtos -> produto produtos .)
+    $end            reduce using rule 7 (produtos -> produto produtos .)
+
+
+state 12
+
+    (8) produto -> * INT . ; STR ; FLOAT ; INT
+
+    ;               shift and go to state 13
+
+
+state 13
+
+    (8) produto -> * INT ; . STR ; FLOAT ; INT
+
+    STR             shift and go to state 14
+
+
+state 14
+
+    (8) produto -> * INT ; STR . ; FLOAT ; INT
+
+    ;               shift and go to state 15
+
+
+state 15
+
+    (8) produto -> * INT ; STR ; . FLOAT ; INT
+
+    FLOAT           shift and go to state 16
+
+
+state 16
+
+    (8) produto -> * INT ; STR ; FLOAT . ; INT
+
+    ;               shift and go to state 17
+
+
+state 17
+
+    (8) produto -> * INT ; STR ; FLOAT ; . INT
+
+    INT             shift and go to state 18
+
+
+state 18
+
+    (8) produto -> * INT ; STR ; FLOAT ; INT .
+
+    *               reduce using rule 8 (produto -> * INT ; STR ; FLOAT ; INT .)
+    ID              reduce using rule 8 (produto -> * INT ; STR ; FLOAT ; INT .)
+    $end            reduce using rule 8 (produto -> * INT ; STR ; FLOAT ; INT .)
+

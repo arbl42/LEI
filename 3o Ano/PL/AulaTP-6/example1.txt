@@ -1,0 +1,18 @@
+/* comment */
+
+ola1
+
+/*
+comment
+comment
+/*comment*/
+comment
+*/
+
+ola2
+----------------
+
+ola1
+
+
+ola2

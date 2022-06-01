@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8"
+      fx:controller="SGA.Controller.LocalizacaoPaletesController">
+    <TableView fx:id="table" layoutX="40.0" layoutY="80.0" prefHeight="270.0" prefWidth="519.0">
+        <columns>
+            <TableColumn prefWidth="129.25" style="-fx-alignment: center;" text="ID"/>
+            <TableColumn prefWidth="129.25" style="-fx-alignment: center;" text="Secção"/>
+            <TableColumn prefWidth="129.25" style="-fx-alignment: center;" text="Prateleira"/>
+            <TableColumn prefWidth="129.25" style="-fx-alignment: center;"/>
+        </columns>
+    </TableView>
+    <Button fx:id="back" layoutY="1.0" mnemonicParsing="false" onMouseReleased="#back" prefHeight="6.0" prefWidth="42.0"
+            style="-fx-background-color: #f3f3f3;" text="&lt;-"/>
+</Pane>

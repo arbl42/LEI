@@ -1,0 +1,144 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> lista_mista
+Rule 1     lista_mista -> PE conteudo PD
+Rule 2     conteudo -> <empty>
+Rule 3     conteudo -> elementos
+Rule 4     elementos -> elemento
+Rule 5     elementos -> elemento VIRG elementos
+Rule 6     elemento -> ID
+Rule 7     elemento -> NUM
+Rule 8     elemento -> <empty>
+
+Terminals, with rules where they appear
+
+ID                   : 6
+NUM                  : 7
+PD                   : 1
+PE                   : 1
+VIRG                 : 5
+error                : 
+
+Nonterminals, with rules where they appear
+
+conteudo             : 1
+elemento             : 4 5
+elementos            : 3 5
+lista_mista          : 0
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . lista_mista
+    (1) lista_mista -> . PE conteudo PD
+
+    PE              shift and go to state 2
+
+    lista_mista                    shift and go to state 1
+
+state 1
+
+    (0) S' -> lista_mista .
+
+
+
+state 2
+
+    (1) lista_mista -> PE . conteudo PD
+    (2) conteudo -> .
+    (3) conteudo -> . elementos
+    (4) elementos -> . elemento
+    (5) elementos -> . elemento VIRG elementos
+    (6) elemento -> . ID
+    (7) elemento -> . NUM
+    (8) elemento -> .
+
+  ! reduce/reduce conflict for PD resolved using rule 2 (conteudo -> .)
+    PD              reduce using rule 2 (conteudo -> .)
+    ID              shift and go to state 6
+    NUM             shift and go to state 7
+    VIRG            reduce using rule 8 (elemento -> .)
+
+  ! PD              [ reduce using rule 8 (elemento -> .) ]
+
+    conteudo                       shift and go to state 3
+    elementos                      shift and go to state 4
+    elemento                       shift and go to state 5
+
+state 3
+
+    (1) lista_mista -> PE conteudo . PD
+
+    PD              shift and go to state 8
+
+
+state 4
+
+    (3) conteudo -> elementos .
+
+    PD              reduce using rule 3 (conteudo -> elementos .)
+
+
+state 5
+
+    (4) elementos -> elemento .
+    (5) elementos -> elemento . VIRG elementos
+
+    PD              reduce using rule 4 (elementos -> elemento .)
+    VIRG            shift and go to state 9
+
+
+state 6
+
+    (6) elemento -> ID .
+
+    VIRG            reduce using rule 6 (elemento -> ID .)
+    PD              reduce using rule 6 (elemento -> ID .)
+
+
+state 7
+
+    (7) elemento -> NUM .
+
+    VIRG            reduce using rule 7 (elemento -> NUM .)
+    PD              reduce using rule 7 (elemento -> NUM .)
+
+
+state 8
+
+    (1) lista_mista -> PE conteudo PD .
+
+    $end            reduce using rule 1 (lista_mista -> PE conteudo PD .)
+
+
+state 9
+
+    (5) elementos -> elemento VIRG . elementos
+    (4) elementos -> . elemento
+    (5) elementos -> . elemento VIRG elementos
+    (6) elemento -> . ID
+    (7) elemento -> . NUM
+    (8) elemento -> .
+
+    ID              shift and go to state 6
+    NUM             shift and go to state 7
+    VIRG            reduce using rule 8 (elemento -> .)
+    PD              reduce using rule 8 (elemento -> .)
+
+    elemento                       shift and go to state 5
+    elementos                      shift and go to state 10
+
+state 10
+
+    (5) elementos -> elemento VIRG elementos .
+
+    PD              reduce using rule 5 (elementos -> elemento VIRG elementos .)
+
+WARNING: 
+WARNING: Conflicts:
+WARNING: 
+WARNING: reduce/reduce conflict in state 2 resolved using rule (conteudo -> <empty>)
+WARNING: rejected rule (elemento -> <empty>) in state 2

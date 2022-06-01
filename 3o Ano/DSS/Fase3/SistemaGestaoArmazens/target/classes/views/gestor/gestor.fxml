@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8"
+      fx:controller="SGA.Controller.gestor.GestorController">
+    <children>
+        <Button layoutX="54.0" layoutY="107.0" mnemonicParsing="false" onMouseReleased="#novaOrdemTransporte"
+                prefHeight="27.0" prefWidth="230.0" text="Registar Ordens de Transporte"/>
+        <Button layoutX="320.0" layoutY="107.0" mnemonicParsing="false" onMouseReleased="#gerirPaletes"
+                prefHeight="27.0" prefWidth="230.0" text="Consultar Paletes"/>
+        <Button layoutX="320.0" layoutY="200.0" mnemonicParsing="false" onMouseReleased="#gerirRobots" prefHeight="27.0"
+                prefWidth="230.0" text="Consultar Robots"/>
+        <Button fx:id="back" layoutY="1.0" mnemonicParsing="false" onMouseReleased="#back" prefHeight="6.0"
+                prefWidth="42.0" style="-fx-background-color: #f3f3f3;" text="&lt;-"/>
+        <Button layoutX="320.0" layoutY="155.0" mnemonicParsing="false" onMouseReleased="#verOrdensTransporte"
+                prefHeight="27.0" prefWidth="230.0" text="Consultar Ordens Transporte"/>
+        <Button layoutX="54.0" layoutY="155.0" mnemonicParsing="false" onMouseReleased="#criarEncarregado"
+                prefHeight="27.0" prefWidth="230.0" text="Registar Encarregados"/>
+        <Button layoutX="54.0" layoutY="200.0" mnemonicParsing="false" onMouseReleased="#criarRobot" prefHeight="27.0"
+                prefWidth="230.0" text="Registar Robots"/>
+    </children>
+</Pane>

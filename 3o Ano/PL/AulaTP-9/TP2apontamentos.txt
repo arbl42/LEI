@@ -1,0 +1,9 @@
+fazer linguagem imperativa
+definir tipos etc
+desenvolver gramatica
+trasformar em "assembly"
+repeat until -> ciclo que executa enquanto a condiçao for FALSA
+dividir em secçoes-> 
+            1a secçao-> declarar variaveis
+            2a secçao-> conjunto de instruçoes (como python)
+talvez meter uma coisa extra de definicao de funcao, para fazer exemplos para a apresentaçao

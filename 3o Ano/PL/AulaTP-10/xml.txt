@@ -1,0 +1,41 @@
+Qq doc XML:
+    - ter uma declaração no início:
+    <?xml version="1.0" ?>
+    - ter um elemento principal:
+        <?xml version="1.0" ?>
+        <doc>
+            ...
+        <\doc>
+    
+    - pode ter mais elementos aninhados:
+        <?xml version="1.0" ?>
+        <doc>
+            Esta é a minha turma:
+            <turma>
+                Este é um aluno:
+                <aluno>
+                    <nome>Ana<\nome>
+                    <foto path="foto.jpg"/>
+                <\aluno>
+            <\turma>
+        <\doc>
+
+        XMLDocument -> XMLDCL OpenTag Contents CloseTag
+
+        Contents ->
+                 | Contents Element
+        
+        Element -> texto
+                 | OpenTag Contents CloseTag
+                 | EmptyElement
+
+        OpenTag -> '<' id AttrList '>'
+
+        AttrList ->
+                 | AttrList Attr
+
+        Attr -> id '=' Value
+
+        CloseTag -> '<' '\' id '>'
+
+        EmptyElement -> '<' id AttrList '/' '>'

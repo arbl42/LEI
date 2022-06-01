@@ -1,0 +1,388 @@
+                  Açoes                 Goto
+Estado  |   (       )       $       |    Z   S
+-------------------------------------------
+0       |   #2/s3   #2      #2      |        1   
+1       |   --     --       rec.    |
+3       |   #2/s3   #2      #2      |        4
+4       |           s5              |
+5       |   #2/s3   #2      #2      |        6    
+6       |   #1      #1      #1      |        
+
+
+Input = "()"
+next = $  
+Stack Estados = [0, 3, 4, 5, 6]
+
+Ação    | Stack Symbol |
+------------------------
+s3      |       (
+#2      |       ( S
+goto 4  |       ( S
+s5      |       ( S )
+#2      |       ( S ) S
+goto 6  |       ( S ) S
+
+        |
+        |
+        |
+        |
+       \ /
+        v
+
+Input = "()"
+next = $  
+Stack Estados = [0, 1] (retiram-se 4 simbolos por causa da produção 1)
+
+Ação    | Stack Symbol |
+------------------------
+s3      |       (
+#2      |       ( S
+goto 4  |       ( S
+s5      |       ( S )
+#2      |       ( S ) S
+goto 6  |       ( S ) S
+#1      |       S
+goto 1  |       S
+rec.
+
+---------------------------------------------------------------------------------------------------------------
+
+Input = "(())()"
+next = (
+Stack Estados = [0]
+
+Ação    | Stack Symbol |
+------------------------
+s3      |       (
+
+        |
+        |
+        |
+        |
+       \ /
+        v
+
+Input = "(())()"
+next = (
+Stack Estados = [0, 3]
+
+Ação    | Stack Symbol 
+------------------------
+s3      |       (
+s3      |       ((
+    
+        |
+        |
+        |
+        |
+       \ /
+        v
+
+Input = "(())()"
+next = )
+Stack Estados = [0, 3, 3]
+
+Ação    | Stack Symbol 
+------------------------
+s3      |       (
+s3      |       ((
+#2      |       ((S
+goto 4  |       ((S
+
+        |
+        |
+        |
+        |
+       \ /
+        v
+
+Input = "(())()"
+next = )
+Stack Estados = [0, 3, 3, 4]
+
+Ação    | Stack Symbol 
+------------------------
+s3      |  (
+s3      |  ( (
+#2      |  ( ( S
+goto 4  |  ( ( S
+s5      |  ( ( S )
+
+        |
+        |
+        |
+        |
+       \ /
+        v
+        
+Input = "(())()"
+next = )
+Stack Estados = [0, 3, 3, 4, 5]
+
+Ação    | Stack Symbol 
+------------------------
+s3      |  (
+s3      |  ( (
+#2      |  ( ( S
+goto 4  |  ( ( S
+s5      |  ( ( S )
+#2      |  ( ( S ) S
+goto 6  | ( ( S ) S
+
+        |
+        |
+        |
+        |
+       \ /
+        v
+                
+Input = "(())()"
+next = )
+Stack Estados = [0, 3]
+
+Ação    | Stack Symbol 
+------------------------
+s3      |  (
+s3      |  ( (
+#2      |  ( ( S
+goto 4  |  ( ( S
+s5      |  ( ( S )
+#2      |  ( ( S ) S
+goto 6  |  ( ( S ) S
+#1      |  ( S
+goto 4  |  ( S
+
+        |
+        |
+        |
+        |
+       \ /
+        v
+                        
+Input = "(())()"
+next = )
+Stack Estados = [0, 3, 4]
+
+Ação    | Stack Symbol 
+------------------------
+s3      |  (
+s3      |  ( (
+#2      |  ( ( S
+goto 4  |  ( ( S
+s5      |  ( ( S )
+#2      |  ( ( S ) S
+goto 6  |  ( ( S ) S
+#1      |  ( S
+goto 4  |  ( S
+s5      |  ( S )
+
+        |
+        |
+        |
+        |
+       \ /
+        v
+                        
+Input = "(())()"
+next = (
+Stack Estados = [0, 3, 4, 5]
+
+Ação    | Stack Symbol 
+------------------------
+s3      |  (
+s3      |  ( (
+#2      |  ( ( S
+goto 4  |  ( ( S
+s5      |  ( ( S )
+#2      |  ( ( S ) S
+goto 6  |  ( ( S ) S
+#1      |  ( S
+goto 4  |  ( S
+s5      |  ( S )
+s3      |  ( S ) (
+
+        |
+        |
+        |
+        |
+       \ /
+        v
+                      
+Input = "(())()"
+next = )
+Stack Estados = [0, 3, 4, 5, 3]
+
+Ação    | Stack Symbol 
+------------------------
+s3      |  (
+s3      |  ( (
+#2      |  ( ( S
+goto 4  |  ( ( S
+s5      |  ( ( S )
+#2      |  ( ( S ) S
+goto 6  |  ( ( S ) S
+#1      |  ( S
+goto 4  |  ( S
+s5      |  ( S )
+s3      |  ( S ) (
+#2      |  ( S ) ( S
+goto 4  |  ( S ) ( S
+
+        |
+        |
+        |
+        |
+       \ /
+        v
+                      
+Input = "(())()"
+next = )
+Stack Estados = [0, 3, 4, 5, 3, 4]
+
+Ação    | Stack Symbol 
+------------------------
+s3      |  (
+s3      |  ( (
+#2      |  ( ( S
+goto 4  |  ( ( S
+s5      |  ( ( S )
+#2      |  ( ( S ) S
+goto 6  |  ( ( S ) S
+#1      |  ( S
+goto 4  |  ( S
+s5      |  ( S )
+s3      |  ( S ) (
+#2      |  ( S ) ( S
+goto 4  |  ( S ) ( S
+s5      |  ( S ) ( S )
+
+        |
+        |
+        |
+        |
+       \ /
+        v
+                      
+Input = "(())()"
+next = $
+Stack Estados = [0, 3, 4, 5, 3, 4, 5]
+
+Ação    | Stack Symbol 
+------------------------
+s3      |  (
+s3      |  ( (
+#2      |  ( ( S
+goto 4  |  ( ( S
+s5      |  ( ( S )
+#2      |  ( ( S ) S
+goto 6  |  ( ( S ) S
+#1      |  ( S
+goto 4  |  ( S
+s5      |  ( S )
+s3      |  ( S ) (
+#2      |  ( S ) ( S
+goto 4  |  ( S ) ( S
+s5      |  ( S ) ( S )
+#2      |  ( S ) ( S ) S
+goto 6  |  ( S ) ( S ) S
+
+        |
+        |
+        |
+        |
+       \ /
+        v
+                      
+Input = "(())()"
+next = $
+Stack Estados = [0, 3, 4, 5]
+
+Ação    | Stack Symbol 
+------------------------
+s3      |  (
+s3      |  ( (
+#2      |  ( ( S
+goto 4  |  ( ( S
+s5      |  ( ( S )
+#2      |  ( ( S ) S
+goto 6  |  ( ( S ) S
+#1      |  ( S
+goto 4  |  ( S
+s5      |  ( S )
+s3      |  ( S ) (
+#2      |  ( S ) ( S
+goto 4  |  ( S ) ( S
+s5      |  ( S ) ( S )
+#2      |  ( S ) ( S ) S
+goto 6  |  ( S ) ( S ) S
+#1      |  ( S ) S
+goto 6  |  ( S ) S
+
+        |
+        |
+        |
+        |
+       \ /
+        v
+                     
+Input = "(())()"
+next = $
+Stack Estados = [0]
+
+Ação    | Stack Symbol 
+------------------------
+s3      |  (
+s3      |  ( (
+#2      |  ( ( S
+goto 4  |  ( ( S
+s5      |  ( ( S )
+#2      |  ( ( S ) S
+goto 6  |  ( ( S ) S
+#1      |  ( S
+goto 4  |  ( S
+s5      |  ( S )
+s3      |  ( S ) (
+#2      |  ( S ) ( S
+goto 4  |  ( S ) ( S
+s5      |  ( S ) ( S )
+#2      |  ( S ) ( S ) S
+goto 6  |  ( S ) ( S ) S
+#1      |  ( S ) S
+goto 6  |  ( S ) S
+#1      |  S
+goto 1  |  S
+
+        |
+        |
+        |
+        |
+       \ /
+        v
+                     
+Input = "(())()"
+next = $
+Stack Estados = [0, 1]
+
+Ação    | Stack Symbol 
+------------------------
+s3      |  (
+s3      |  ( (
+#2      |  ( ( S
+goto 4  |  ( ( S
+s5      |  ( ( S )
+#2      |  ( ( S ) S
+goto 6  |  ( ( S ) S
+#1      |  ( S
+goto 4  |  ( S
+s5      |  ( S )
+s3      |  ( S ) (
+#2      |  ( S ) ( S
+goto 4  |  ( S ) ( S
+s5      |  ( S ) ( S )
+#2      |  ( S ) ( S ) S
+goto 6  |  ( S ) ( S ) S
+#1      |  ( S ) S
+goto 6  |  ( S ) S
+#1      |  S
+goto 1  |  S
+rec.

@@ -1,0 +1,42 @@
+()
+(())()
+(()())
+
+
+p0: Z -> S $ 
+
+p1: S -> ( S ) S
+p2:     | з
+
+
+LR(0)
+(Left Right)
+(Lê da esquerda para a direita, faz reduções da direita para a esquerda)
+(0 significa que vê 0 símbolos à frente)
+
+-------------------------//-------------------------
+(Estado 0)
+Z -> . S $ (Kernel do Estado)
+S -> . ( S ) S
+S -> . #p2
+---------------------------
+(Estado 1, transitando por S)
+Z -> S . $
+---------------------------
+(Estado 2, reconhecimento)
+---------------------------
+(Estado 3, transitando por "(")
+S -> (. S ) S
+S -> . ( S ) S (Vai para o próprio Estado)
+S -> . #p2
+---------------------------
+(Estado 4, transitando por S)
+S -> ( S . ) S
+---------------------------
+(Estado 5, transitando por ")")
+S -> ( S ). S
+S -> . ( S ) S (Vai para o Estado 3)
+S -> . #p2
+---------------------------
+(Estado 6, transitando por S)
+S -> ( S ) S . #p1

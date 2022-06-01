@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8"
+      fx:controller="SGA.Controller.encarregado.EncarregadoController">
+    <Button layoutX="185.0" layoutY="130.0" mnemonicParsing="false" onMouseReleased="#verOrdensTransporte"
+            prefHeight="27.0" prefWidth="230.0"
+            text="Consultar Ordens de Transporte"/>
+    <Button layoutX="185.0" layoutY="166.0" mnemonicParsing="false" onMouseReleased="#verRobots" prefHeight="27.0"
+            prefWidth="230.0"
+            text="Consultar Robots"/>
+    <Button fx:id="back" layoutY="1.0" mnemonicParsing="false" onMouseReleased="#back" prefHeight="6.0" prefWidth="42.0"
+            style="-fx-background-color: #f3f3f3;" text="&lt;-"/>
+</Pane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<relatorio>
+    <titulo>Relatório 1</titulo>
+    <data>16-03-2021</data>
+
+    <autores>
+        <autor>
+            <nome>Pedro Moura</nome>
+            <numero>PG31094</numero>
+            <email>pedrormoura@gmail.com</email>
+        </autor>
+        <autor>
+            <nome>Cristiano Ronaldo</nome>
+            <email>cr7@gmail.com</email>
+        </autor>
+    </autores>
+
+    <resumo>
+        Este é o resumo deste relatório.
+    </resumo>
+</relatorio>    
