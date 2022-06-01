@@ -9,7 +9,7 @@ Conjunto de projetos/apontamentos do primeiro grau do meu percurso académico, a
    - [TP3](https://github.com/AITK42/LEI/tree/main/2o%20Ano/RC/TP3)
    - [TP4](https://github.com/AITK42/LEI/tree/main/2o%20Ano/RC/TP4)
  - [LI-II](https://github.com/AITK42/LEI/tree/main/2o%20Ano/LI-II)
- - POO
+ - [POO](https://github.com/AITK42/LEI/tree/main/2o%20Ano/POO)
 
 ### 3º Ano
   ##### 1º Semestre
