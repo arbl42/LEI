@@ -1,0 +1,3 @@
+/home/romeu/LI2-Reversi/proj/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/romeu/LI2-Reversi/proj/cmake-build-debug/CMakeFiles/proj.dir
+/home/romeu/LI2-Reversi/proj/cmake-build-debug/CMakeFiles/edit_cache.dir

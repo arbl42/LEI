@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/romeu/LI2-Reversi/proj/bot.c
+stdlib.h
+-
+bot.h
+/home/romeu/LI2-Reversi/proj/bot.h
+
+/home/romeu/LI2-Reversi/proj/bot.h
+estado.h
+/home/romeu/LI2-Reversi/proj/estado.h
+
+/home/romeu/LI2-Reversi/proj/estado.h
+stdio.h
+-
+

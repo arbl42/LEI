@@ -1,0 +1,146 @@
+\hypertarget{stack_8h}{}\section{stack.\+h File Reference}
+\label{stack_8h}\index{stack.\+h@{stack.\+h}}
+
+
+Histórico de estados.  
+
+
+{\ttfamily \#include \char`\"{}estado.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_node}{Node}
+\begin{DoxyCompactList}\small\item\em Pilha de estados(stack) ordenados cronologicamente, do mais recente para o mais antigo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}\label{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}} 
+typedef struct \hyperlink{struct_node}{Node} $\ast$ \hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK}
+\begin{DoxyCompactList}\small\item\em Pilha de estados(stack) ordenados cronologicamente, do mais recente para o mais antigo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{stack_8h_a2187c5f0ebca27e040d34d7a5ebe754d}{push} (\hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK} $\ast$s, \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Insere um estado no topo da stack. \end{DoxyCompactList}\item 
+int \hyperlink{stack_8h_ae2364dcef67657e7460bb60cf60d400a}{peek} (\hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK} s, \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Indica o estado que se encontra no topo da stack (o último que foi armazenado). \end{DoxyCompactList}\item 
+int \hyperlink{stack_8h_a6951677634bc532fc5a003441d4adf3a}{pop} (\hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Caso exista mais que um elemento na stack, retira o último estado armazenado (topo da stack). \end{DoxyCompactList}\item 
+void \hyperlink{stack_8h_a196728dca34aa4e0cf84d4c83e036bb1}{display} (\hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK} s)
+\begin{DoxyCompactList}\small\item\em Função que mostra todo o conteúdo da stack. \end{DoxyCompactList}\item 
+void \hyperlink{stack_8h_af342690ae3e51d06054e72b5ee75aa27}{reset\+Stack} (\hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Função que apaga todo o conteúdo da stack. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Histórico de estados. 
+
+\begin{DoxyAuthor}{Authors}
+Grupo 4 -\/ P\+L1 
+\end{DoxyAuthor}
+\begin{DoxyAuthor}{Author}
+Romeu Silva -\/ A89617 
+
+Ariana Lousada -\/ A87998 
+
+Ricardo Carvalho -\/ A89504 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{stack_8h_a196728dca34aa4e0cf84d4c83e036bb1}\label{stack_8h_a196728dca34aa4e0cf84d4c83e036bb1}} 
+\index{stack.\+h@{stack.\+h}!display@{display}}
+\index{display@{display}!stack.\+h@{stack.\+h}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void display (\begin{DoxyParamCaption}\item[{\hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK}}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que mostra todo o conteúdo da stack. 
+
+Esta função é apenas utilizada em testes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Stack usada para o \char`\"{}histórico\char`\"{} dos estados do jogo. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{stack_8h_ae2364dcef67657e7460bb60cf60d400a}\label{stack_8h_ae2364dcef67657e7460bb60cf60d400a}} 
+\index{stack.\+h@{stack.\+h}!peek@{peek}}
+\index{peek@{peek}!stack.\+h@{stack.\+h}}
+\subsubsection{\texorpdfstring{peek()}{peek()}}
+{\footnotesize\ttfamily int peek (\begin{DoxyParamCaption}\item[{\hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK}}]{s,  }\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Indica o estado que se encontra no topo da stack (o último que foi armazenado). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Stack usada para o \char`\"{}histórico\char`\"{} dos estados do jogo. \\
+\hline
+{\em e} & Apontador para o sitio onde o estado vai ser armazenado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 caso a stack esteja vazia, 1 caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stack_8h_a6951677634bc532fc5a003441d4adf3a}\label{stack_8h_a6951677634bc532fc5a003441d4adf3a}} 
+\index{stack.\+h@{stack.\+h}!pop@{pop}}
+\index{pop@{pop}!stack.\+h@{stack.\+h}}
+\subsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily int pop (\begin{DoxyParamCaption}\item[{\hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Caso exista mais que um elemento na stack, retira o último estado armazenado (topo da stack). 
+
+Esta função é utilizada no comando U (\char`\"{}\+Undo\char`\"{} jogada). Se a stack apenas tiver um estado armazenado (isto é, o estado inicial), nada se altera, isto de modo a não apagar o estado inicial da stack caso o utilizador tente voltar mais atrás
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Apontador para a stack. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 caso a stack não tenha ou tenha apenas um elemento, 1 caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stack_8h_a2187c5f0ebca27e040d34d7a5ebe754d}\label{stack_8h_a2187c5f0ebca27e040d34d7a5ebe754d}} 
+\index{stack.\+h@{stack.\+h}!push@{push}}
+\index{push@{push}!stack.\+h@{stack.\+h}}
+\subsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily int push (\begin{DoxyParamCaption}\item[{\hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK} $\ast$}]{s,  }\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Insere um estado no topo da stack. 
+
+A função começa por criar uma zona de alocação de memória e testa se a stack está completa (se já não existe memória para armazenar mais estados). Se esse for o caso, a função retorna 0. Caso contrário, é armazenado um novo estado de jogo (a stack é atualizada) e a função retorna 1.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Apontador para o topo da stack. \\
+\hline
+{\em e} & Estado atual do jogo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 caso a função tenha sido executada corretamente, isto é, a stack possua mais um membro no inicio, 0 caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{stack_8h_af342690ae3e51d06054e72b5ee75aa27}\label{stack_8h_af342690ae3e51d06054e72b5ee75aa27}} 
+\index{stack.\+h@{stack.\+h}!reset\+Stack@{reset\+Stack}}
+\index{reset\+Stack@{reset\+Stack}!stack.\+h@{stack.\+h}}
+\subsubsection{\texorpdfstring{reset\+Stack()}{resetStack()}}
+{\footnotesize\ttfamily void reset\+Stack (\begin{DoxyParamCaption}\item[{\hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Função que apaga todo o conteúdo da stack. 
+
+Esta função é utilizada quando se começa um novo jogo, ou se carrega um outro ficheiro já anteriormente guardado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Apontador para stack \\
+\hline
+\end{DoxyParams}

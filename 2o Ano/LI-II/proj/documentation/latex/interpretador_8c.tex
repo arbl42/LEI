@@ -1,0 +1,99 @@
+\hypertarget{interpretador_8c}{}\section{interpretador.\+c File Reference}
+\label{interpretador_8c}\index{interpretador.\+c@{interpretador.\+c}}
+
+
+Interpretador do jogo.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}comando.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interpretador_8c_a1d5dab30b404fab91608086105afc78c}\label{interpretador_8c_a1d5dab30b404fab91608086105afc78c}} 
+\#define \hyperlink{interpretador_8c_a1d5dab30b404fab91608086105afc78c}{M\+A\+X\+\_\+\+B\+U\+F\+F\+ER}~1024
+\begin{DoxyCompactList}\small\item\em Tamanho maximo de uma string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} \hyperlink{interpretador_8c_a4a72c30e6a0e8afb221d84826b4a8b43}{interpretar} (\hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK} $\ast$s, \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e, char linha\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Função que lê os comandos digitados pelo utilizador. \end{DoxyCompactList}\item 
+void \hyperlink{interpretador_8c_a3f105624c88686ab0dc710aed735b181}{print\+\_\+prompt} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Imprime no ecrã a peça que vai jogar, de modo a tornar a utilização do programa mais clara. \end{DoxyCompactList}\item 
+void \hyperlink{interpretador_8c_ab6de22a324225740efa0f82f7403976d}{interpretador} (\hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK} $\ast$s, \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Função que chama continuamente as funções \textquotesingle{}interpretar\textquotesingle{} e \textquotesingle{}print\+\_\+prompt\textquotesingle{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interpretador do jogo. 
+
+\begin{DoxyAuthor}{Authors}
+Grupo 4 -\/ P\+L1 
+\end{DoxyAuthor}
+\begin{DoxyAuthor}{Author}
+Romeu Silva -\/ A89617 
+
+Ariana Lousada -\/ A87998 
+
+Ricardo Carvalho -\/ A89504 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{interpretador_8c_ab6de22a324225740efa0f82f7403976d}\label{interpretador_8c_ab6de22a324225740efa0f82f7403976d}} 
+\index{interpretador.\+c@{interpretador.\+c}!interpretador@{interpretador}}
+\index{interpretador@{interpretador}!interpretador.\+c@{interpretador.\+c}}
+\subsubsection{\texorpdfstring{interpretador()}{interpretador()}}
+{\footnotesize\ttfamily void interpretador (\begin{DoxyParamCaption}\item[{\hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK} $\ast$}]{s,  }\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Função que chama continuamente as funções \textquotesingle{}interpretar\textquotesingle{} e \textquotesingle{}print\+\_\+prompt\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Apontador para a pilha de estados que apareceram durante o correr do jogo atual, ordenados do mais recente para o mais antigo. \\
+\hline
+{\em e} & Estado atual do jogo. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interpretador_8c_a4a72c30e6a0e8afb221d84826b4a8b43}\label{interpretador_8c_a4a72c30e6a0e8afb221d84826b4a8b43}} 
+\index{interpretador.\+c@{interpretador.\+c}!interpretar@{interpretar}}
+\index{interpretar@{interpretar}!interpretador.\+c@{interpretador.\+c}}
+\subsubsection{\texorpdfstring{interpretar()}{interpretar()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} interpretar (\begin{DoxyParamCaption}\item[{\hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK} $\ast$}]{s,  }\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e,  }\item[{char}]{linha\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Função que lê os comandos digitados pelo utilizador. 
+
+Esta função tem como objetivo organizar melhor as escolhas dos comandos, tornando-\/se numa espécie de menu, que guarda os dados diretamente escritos pelo utilizador na linha de comandos.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Apontador para a pilha de estados que apareceram durante o correr do jogo atual, ordenados do mais recente para o mais antigo. \\
+\hline
+{\em e} & Estado atual do jogo. \\
+\hline
+{\em linha} & Comando digitado pelo utilizador. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+e Estado do jogo depois das mudanças (se existentes) efetuados pelo comando. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interpretador_8c_a3f105624c88686ab0dc710aed735b181}\label{interpretador_8c_a3f105624c88686ab0dc710aed735b181}} 
+\index{interpretador.\+c@{interpretador.\+c}!print\+\_\+prompt@{print\+\_\+prompt}}
+\index{print\+\_\+prompt@{print\+\_\+prompt}!interpretador.\+c@{interpretador.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+prompt()}{print\_prompt()}}
+{\footnotesize\ttfamily void print\+\_\+prompt (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Imprime no ecrã a peça que vai jogar, de modo a tornar a utilização do programa mais clara. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual do jogo \\
+\hline
+\end{DoxyParams}

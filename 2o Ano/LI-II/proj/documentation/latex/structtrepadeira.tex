@@ -1,0 +1,35 @@
+\hypertarget{structtrepadeira}{}\section{trepadeira Struct Reference}
+\label{structtrepadeira}\index{trepadeira@{trepadeira}}
+
+
+Lista dinâmica em que cada nodo é constituido por uma posição, uma lista de posições e o apontador para a próxima lista.  
+
+
+
+
+{\ttfamily \#include $<$bot.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structtrepadeira_a97ebacdec2eb0931913ecd80349b7ea6}\label{structtrepadeira_a97ebacdec2eb0931913ecd80349b7ea6}} 
+\hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO} \hyperlink{structtrepadeira_a97ebacdec2eb0931913ecd80349b7ea6}{posicao}
+\begin{DoxyCompactList}\small\item\em Jogada a realizar pela pessoa. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structtrepadeira_ad5240a7c37ca3fafed09e4785fa5262f}\label{structtrepadeira_ad5240a7c37ca3fafed09e4785fa5262f}} 
+\hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO} \hyperlink{structtrepadeira_ad5240a7c37ca3fafed09e4785fa5262f}{lp}
+\begin{DoxyCompactList}\small\item\em Todas as jogadas do oponente possiveis derivadas da primeira pelo próprio. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structtrepadeira_a6f2e25a90c4c8d7ba46e6e631216f05e}\label{structtrepadeira_a6f2e25a90c4c8d7ba46e6e631216f05e}} 
+struct \hyperlink{structtrepadeira}{trepadeira} $\ast$ \hyperlink{structtrepadeira_a6f2e25a90c4c8d7ba46e6e631216f05e}{prox}
+\begin{DoxyCompactList}\small\item\em Outras jogadas que o próprio pode fazer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Lista dinâmica em que cada nodo é constituido por uma posição, uma lista de posições e o apontador para a próxima lista. 
+
+Esta estrutura de dados é uma \char`\"{}\+Lista de Listas\char`\"{}, isto é, a lista exterior contem uma Posição e uma lista de Posições (lista interior).
+
+A estrutura é utilizada de modo a que todos os elementos da lista interior de cada nodo sejam as posições das jogadas possiveis ao oponente caso seja efetuada a jogada na posicao indicada no nodo. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{bot_8h}{bot.\+h}\end{DoxyCompactItemize}

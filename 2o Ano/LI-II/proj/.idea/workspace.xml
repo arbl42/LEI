@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="proj" targetName="proj" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="28506c97-d6b9-46a0-9f3e-0a7005ab8069" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/bot.c" beforeDir="false" afterPath="$PROJECT_DIR$/bot.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot.h" beforeDir="false" afterPath="$PROJECT_DIR$/bot.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/proj.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/proj.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/proj.dir/bot.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/proj.dir/bot.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/proj.dir/comando.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/proj.dir/comando.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/proj.dir/estado.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/proj.dir/estado.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/proj.dir/interpretador.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/proj.dir/interpretador.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/proj.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/proj.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/proj.dir/stack.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/proj.dir/stack.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/fich_estado" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/proj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/proj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/annotated.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/annotated.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/annotated_dup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/bot_8c.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/bot_8c.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/bot_8c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/bot_8c_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/bot_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/bot_8h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/bot_8h.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/bot_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/bot_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/comando_8c.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/comando_8c.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/comando_8c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/comando_8c_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/comando_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/comando_8h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/comando_8h.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/comando_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/comando_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/dynsections.js" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/dynsections.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/estado_8c.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/estado_8c.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/estado_8c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/estado_8c_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/estado_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/estado_8h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/estado_8h.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/estado_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/estado_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/files.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/files.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/files.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/functions.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/functions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/functions_vars.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/functions_vars.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/globals.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/globals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/globals_defs.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/globals_defs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/globals_enum.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/globals_enum.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/globals_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/globals_func.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/globals_type.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/globals_type.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/interpretador_8c.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/interpretador_8c.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/interpretador_8c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/interpretador_8c_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/interpretador_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/interpretador_8h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/interpretador_8h.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/interpretador_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/interpretador_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/main_8c_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/navtree.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/navtree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/navtreedata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/navtreeindex0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/resize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/search/all_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/search/all_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/search/functions_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/search/functions_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/stack_8c.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/stack_8c.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/stack_8c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/stack_8c_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/stack_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/stack_8h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/stack_8h.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/stack_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/stack_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/struct_node.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/struct_node.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/struct_node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/structestado.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/structestado.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/structestado.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/structposicao.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/structposicao.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/structposicao.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/structraiz_trepadeira.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/structraiz_trepadeira.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/structraiz_trepadeira.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/structscore.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/structscore.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/structscore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/structtrepadeira.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/html/structtrepadeira.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/html/structtrepadeira.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/latex/bot_8c.tex" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/latex/bot_8c.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/latex/bot_8h.tex" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/latex/bot_8h.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/latex/comando_8c.tex" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/latex/comando_8c.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/latex/comando_8h.tex" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/latex/comando_8h.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/latex/estado_8c.tex" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/latex/estado_8c.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/latex/estado_8h.tex" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/latex/estado_8h.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/latex/files.tex" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/latex/files.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/latex/interpretador_8c.tex" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/latex/interpretador_8c.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/latex/interpretador_8h.tex" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/latex/interpretador_8h.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/latex/refman.tex" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/latex/refman.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/latex/stack_8c.tex" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/latex/stack_8c.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/latex/stack_8h.tex" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/latex/stack_8h.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/latex/struct_node.tex" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/latex/struct_node.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/latex/structestado.tex" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/latex/structestado.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/latex/structposicao.tex" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/latex/structposicao.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/latex/structraiz_trepadeira.tex" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/latex/structraiz_trepadeira.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/latex/structscore.tex" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/latex/structscore.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/latex/structtrepadeira.tex" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/latex/structtrepadeira.tex" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bot.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5808">
+              <caret line="243" column="19" selection-start-line="243" selection-start-column="19" selection-end-line="243" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/estado.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="290" selection-start-line="290" selection-end-line="290" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bot.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>TODO</find>
+      <find>todo</find>
+      <find>erro</find>
+      <find>8</find>
+      <find>modo</find>
+      <find>peek</find>
+      <find>freerTT</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="xtrigger &lt;48985272+xtrigger@users.noreply.github.com&gt;" />
+        <option value="xtrigger &lt;48985272+xtrigger@users.noreply.github.com&gt;p" />
+        <option value="Romeu Silva &lt;romeu.lobo.silva@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../README.md" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/main.c" />
+        <option value="$PROJECT_DIR$/interpretador.h" />
+        <option value="$PROJECT_DIR$/comando.h" />
+        <option value="$PROJECT_DIR$/stack.h" />
+        <option value="$PROJECT_DIR$/interpretador.c" />
+        <option value="$PROJECT_DIR$/estado.c" />
+        <option value="$PROJECT_DIR$/estado.h" />
+        <option value="$PROJECT_DIR$/stack.c" />
+        <option value="$PROJECT_DIR$/comando.c" />
+        <option value="$PROJECT_DIR$/bot.h" />
+        <option value="$PROJECT_DIR$/bot.c" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1920" />
+    <option name="height" value="1029" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="proj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proj" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="dynamic.analysis.tools.valgrind" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="proj" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="proj" TARGET_NAME="proj" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="proj" RUN_TARGET_NAME="proj">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="28506c97-d6b9-46a0-9f3e-0a7005ab8069" name="Default Changelist" comment="" />
+      <created>1551281329723</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551281329723</updated>
+      <workItem from="1551281331731" duration="2650000" />
+      <workItem from="1551366525299" duration="1736000" />
+      <workItem from="1551370508870" duration="37000" />
+      <workItem from="1552042447609" duration="1734000" />
+      <workItem from="1552473187033" duration="630000" />
+      <workItem from="1553677479469" duration="5909000" />
+      <workItem from="1553722805539" duration="24000" />
+      <workItem from="1553791919429" duration="17000" />
+      <workItem from="1553940472284" duration="151000" />
+      <workItem from="1553940657262" duration="8586000" />
+      <workItem from="1553949270342" duration="625000" />
+      <workItem from="1554031246357" duration="22000" />
+      <workItem from="1554031347077" duration="3159000" />
+      <workItem from="1554064675478" duration="1219000" />
+      <workItem from="1554643931184" duration="6473000" />
+      <workItem from="1555229116142" duration="11693000" />
+      <workItem from="1555406468649" duration="6580000" />
+      <workItem from="1555584372753" duration="12000" />
+      <workItem from="1555585109735" duration="53000" />
+      <workItem from="1555586048425" duration="16000" />
+      <workItem from="1555586206604" duration="74000" />
+      <workItem from="1555586424323" duration="163000" />
+      <workItem from="1555587892860" duration="17000" />
+      <workItem from="1555588202765" duration="45000" />
+      <workItem from="1555588611206" duration="116000" />
+      <workItem from="1555588740959" duration="5000" />
+      <workItem from="1555588798163" duration="573000" />
+      <workItem from="1556092875153" duration="5016000" />
+      <workItem from="1556099393756" duration="50000" />
+      <workItem from="1556130627247" duration="1641000" />
+      <workItem from="1556190261655" duration="601000" />
+      <workItem from="1556191045935" duration="9710000" />
+      <workItem from="1556370566441" duration="11037000" />
+      <workItem from="1556396993801" duration="2623000" />
+      <workItem from="1556706584078" duration="12063000" />
+      <workItem from="1557302762172" duration="5325000" />
+      <workItem from="1557424448098" duration="9958000" />
+      <workItem from="1557564935884" duration="12693000" />
+      <workItem from="1557582933389" duration="481000" />
+      <workItem from="1557744206323" duration="7336000" />
+      <workItem from="1557828987877" duration="5612000" />
+      <workItem from="1558090821020" duration="4990000" />
+      <workItem from="1558176849798" duration="7820000" />
+      <workItem from="1558298102786" duration="7342000" />
+    </task>
+    <task id="LOCAL-00001" summary="Interpretador no estado.c e Ler ficheiros (1 erro)">
+      <created>1553948514761</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553948514762</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Interpretador no estado.c e Ler ficheiros (1 erro)">
+      <created>1553949006164</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1553949006164</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Stack">
+      <created>1554915172008</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554915172008</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Correcao da Stack; Comando Undo">
+      <created>1555250776515</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1555250776515</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Virar pecas ao jogar; saltar jogadas e acabar jogo">
+      <created>1555412439539</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1555412439539</updated>
+    </task>
+    <task id="LOCAL-00006" summary="bot1 (bot.c e bot.h) e pequenas mudancas">
+      <created>1556727464928</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1556727464929</updated>
+    </task>
+    <task id="LOCAL-00007" summary="bot3">
+      <created>1557438883438</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1557438883438</updated>
+    </task>
+    <task id="LOCAL-00008" summary="comando C">
+      <created>1557582889252</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1557582889252</updated>
+    </task>
+    <task id="LOCAL-00009" summary="pequena correcao no cmd_L">
+      <created>1557583157068</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1557583157068</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Mudanca de sitio dos comentarios/funcoes estado.c/estado.h">
+      <created>1557834495951</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1557834495951</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fim do código">
+      <created>1558095660368</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1558095660368</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Pequena correcao no bot3">
+      <created>1558303556087</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1558303556087</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="158266000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="-1" width="1920" height="1040" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11632871" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32969433" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994664" weight="0.3951965" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995633" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32824427" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32532752" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053364" side_tool="true" weight="0.30567685" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3286026" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.32969433" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Interpretador no estado.c e Ler ficheiros (1 erro)" />
+    <MESSAGE value="Stack" />
+    <MESSAGE value="Correcao da Stack; Comando Undo" />
+    <MESSAGE value="Virar pecas ao jogar; saltar jogadas e acabar jogo" />
+    <MESSAGE value="bot1 (bot.c e bot.h) e pequenas mudancas" />
+    <MESSAGE value="bot3" />
+    <MESSAGE value="comando C" />
+    <MESSAGE value="pequena correcao no cmd_L" />
+    <MESSAGE value="Mudanca de sitio dos comentarios/funcoes estado.c/estado.h" />
+    <MESSAGE value="Fim do código" />
+    <MESSAGE value="Pequena correcao no bot3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pequena correcao no bot3" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../README.md">
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/stack.c" />
+    <entry file="file://$USER_HOME$/Desktop/stack.h" />
+    <entry file="file://$PROJECT_DIR$/Doxyfile" />
+    <entry file="file://$PROJECT_DIR$/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comando.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+          <folding>
+            <element signature="e#265#284#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/estado.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpretador.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1726">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpretador.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+          <folding>
+            <element signature="e#255#274#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stack.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="53" column="63" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stack.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comando.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="329" column="38" selection-start-line="329" selection-start-column="38" selection-end-line="329" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bot.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/estado.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="290" selection-start-line="290" selection-end-line="290" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bot.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5808">
+          <caret line="243" column="19" selection-start-line="243" selection-start-column="19" selection-end-line="243" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

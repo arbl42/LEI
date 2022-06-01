@@ -1,0 +1,331 @@
+\hypertarget{bot_8h}{}\section{bot.\+h File Reference}
+\label{bot_8h}\index{bot.\+h@{bot.\+h}}
+
+
+Definições dos ro\textquotesingle{}bot\textquotesingle{}s.  
+
+
+{\ttfamily \#include \char`\"{}estado.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structtrepadeira}{trepadeira}
+\begin{DoxyCompactList}\small\item\em Lista dinâmica em que cada nodo é constituido por uma posição, uma lista de posições e o apontador para a próxima lista. \end{DoxyCompactList}\item 
+struct \hyperlink{structraiz_trepadeira}{raiz\+Trepadeira}
+\begin{DoxyCompactList}\small\item\em Adiciona um Estado inicial à estrutura \textquotesingle{}trepadeira\textquotesingle{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structtrepadeira}{trepadeira} $\ast$ \hyperlink{bot_8h_aae2ffd32242a51942985cb9ba7d8f6fa}{T\+Tree}
+\begin{DoxyCompactList}\small\item\em Lista dinâmica em que cada nodo é constituido por uma posição, uma lista de posições e o apontador para a próxima lista. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structraiz_trepadeira}{raiz\+Trepadeira} \hyperlink{bot_8h_a38cf9545aa5d47a9e94a13adcff582e0}{r\+T\+Tree}
+\begin{DoxyCompactList}\small\item\em Adiciona um Estado inicial à estrutura \textquotesingle{}trepadeira\textquotesingle{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} \hyperlink{bot_8h_ac315444d8613e19a02959f0f8569b854}{bot\+Jogar} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Função que chama o bot de nível a ser utilizado e efetua a jogada na posição que este \char`\"{}decide\char`\"{}. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO} \hyperlink{bot_8h_a9281d1d220fc586babb84705b2374751}{bot1} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Jogada que o ro\textquotesingle{}bot\textquotesingle{} de nível 1 escolhe. \end{DoxyCompactList}\item 
+int \hyperlink{bot_8h_a8a969ec8f737d078f23f63752eeec87b}{rand\+\_\+between} (int min, int max)
+\begin{DoxyCompactList}\small\item\em Função que devolve um inteiro de entre um intervalo de valores. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO} \hyperlink{bot_8h_ac05feb262e4b535af36b8c9b8d94d665}{bot2} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Jogada que o ro\textquotesingle{}bot\textquotesingle{} de nível 2 escolhe. \end{DoxyCompactList}\item 
+int \hyperlink{bot_8h_a8fa113955dafa56905259b31a855df76}{bot2worth} (\hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO} p, \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Faz a diferença de pontuações do ro\textquotesingle{}bot\textquotesingle{} e do jogador, tendo em conta uma jogada, e utilizando como forma de medir a pontuação, uma tabela predefinida (tab\+Val). \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO} \hyperlink{bot_8h_afad6deb9a99e0250538202ea15b04ee6}{bot3} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Jogada que o ro\textquotesingle{}bot\textquotesingle{} de nível 3 escolhe. \end{DoxyCompactList}\item 
+\hyperlink{bot_8h_aae2ffd32242a51942985cb9ba7d8f6fa}{T\+Tree} \hyperlink{bot_8h_a41a227a6d7fff9973c304001082ff0cf}{build\+T\+Tree} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Constrói uma \char`\"{}árvore\char`\"{} de posicões. \end{DoxyCompactList}\item 
+\hyperlink{bot_8h_a38cf9545aa5d47a9e94a13adcff582e0}{r\+T\+Tree} \hyperlink{bot_8h_a3285439cde3ff42406cb7afb809b43f7}{buildr\+T\+Tree} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Constrói uma \char`\"{}árvore\char`\"{} de posições, iniciada por um estado. \end{DoxyCompactList}\item 
+void \hyperlink{bot_8h_a8a500f340a7693b35169b5c33bc690ab}{maior\+Score\+Pos} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e, \hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO} jog1, \hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO} $\ast$jog2)
+\begin{DoxyCompactList}\small\item\em Reduz uma lista de posições a uma só posição, posição esta que é considerada a melhor (segundo a pontuação do bot 2) caso seja efetuada uma jogada prévia (também indicada). \end{DoxyCompactList}\item 
+void \hyperlink{bot_8h_ad7ea92ada7c1f4caae91e24e8224cba4}{menor2jogada} (\hyperlink{bot_8h_a38cf9545aa5d47a9e94a13adcff582e0}{r\+T\+Tree} $\ast$r)
+\begin{DoxyCompactList}\small\item\em Reduz o tamanho (caso seja maior que 1) da lista de posições contida em cada nodo de uma árvores de posições. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO} \hyperlink{bot_8h_a42c5f480841eabdb79646382d23b50db}{escolhamin\+Max} (\hyperlink{bot_8h_a38cf9545aa5d47a9e94a13adcff582e0}{r\+T\+Tree} r)
+\begin{DoxyCompactList}\small\item\em Decide de entre as folhas de uma árvore \textquotesingle{}\hyperlink{structraiz_trepadeira}{raiz\+Trepadeira}\textquotesingle{} reduzida (depois da atuação de \textquotesingle{}menor2jogada\textquotesingle{}) qual a que implica a uma perda menor/ganho maior (se possivel), jogando na árvore \textquotesingle{}trepadeira\textquotesingle{} em que esta folha está contida. \end{DoxyCompactList}\item 
+void \hyperlink{bot_8h_a9e0d08674709820849fc036c437244e8}{free1\+T\+Tree} (\hyperlink{bot_8h_aae2ffd32242a51942985cb9ba7d8f6fa}{T\+Tree} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Liberta todo o espaço ocupado por um nodo de uma árvore \textquotesingle{}trepadeira\textquotesingle{}, ficando assim a apontar para o nodo seguinte. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definições dos ro\textquotesingle{}bot\textquotesingle{}s. 
+
+\begin{DoxyAuthor}{Authors}
+Grupo 4 -\/ P\+L1 
+\end{DoxyAuthor}
+\begin{DoxyAuthor}{Author}
+Romeu Silva -\/ A89617 
+
+Ariana Lousada -\/ A87998 
+
+Ricardo Carvalho -\/\+A89504 
+\end{DoxyAuthor}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{bot_8h_a38cf9545aa5d47a9e94a13adcff582e0}\label{bot_8h_a38cf9545aa5d47a9e94a13adcff582e0}} 
+\index{bot.\+h@{bot.\+h}!r\+T\+Tree@{r\+T\+Tree}}
+\index{r\+T\+Tree@{r\+T\+Tree}!bot.\+h@{bot.\+h}}
+\subsubsection{\texorpdfstring{r\+T\+Tree}{rTTree}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structraiz_trepadeira}{raiz\+Trepadeira}  \hyperlink{bot_8h_a38cf9545aa5d47a9e94a13adcff582e0}{r\+T\+Tree}}
+
+
+
+Adiciona um Estado inicial à estrutura \textquotesingle{}trepadeira\textquotesingle{}. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structtrepadeira}{trepadeira} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{bot_8h_aae2ffd32242a51942985cb9ba7d8f6fa}\label{bot_8h_aae2ffd32242a51942985cb9ba7d8f6fa}} 
+\index{bot.\+h@{bot.\+h}!T\+Tree@{T\+Tree}}
+\index{T\+Tree@{T\+Tree}!bot.\+h@{bot.\+h}}
+\subsubsection{\texorpdfstring{T\+Tree}{TTree}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structtrepadeira}{trepadeira} $\ast$ \hyperlink{bot_8h_aae2ffd32242a51942985cb9ba7d8f6fa}{T\+Tree}}
+
+
+
+Lista dinâmica em que cada nodo é constituido por uma posição, uma lista de posições e o apontador para a próxima lista. 
+
+Esta estrutura de dados é uma \char`\"{}\+Lista de Listas\char`\"{}, isto é, a lista exterior contem uma Posição e uma lista de Posições (lista interior).
+
+A estrutura é utilizada de modo a que todos os elementos da lista interior de cada nodo sejam as posições das jogadas possiveis ao oponente caso seja efetuada a jogada na posicao indicada no nodo. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{bot_8h_a9281d1d220fc586babb84705b2374751}\label{bot_8h_a9281d1d220fc586babb84705b2374751}} 
+\index{bot.\+h@{bot.\+h}!bot1@{bot1}}
+\index{bot1@{bot1}!bot.\+h@{bot.\+h}}
+\subsubsection{\texorpdfstring{bot1()}{bot1()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO} bot1 (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Jogada que o ro\textquotesingle{}bot\textquotesingle{} de nível 1 escolhe. 
+
+Este ro\textquotesingle{}bot\textquotesingle{} escolhe uma jogada à sorte de entre as possiveis.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Posição que o ro\textquotesingle{}bot\textquotesingle{} \char`\"{}escolheu\char`\"{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{bot_8h_ac05feb262e4b535af36b8c9b8d94d665}\label{bot_8h_ac05feb262e4b535af36b8c9b8d94d665}} 
+\index{bot.\+h@{bot.\+h}!bot2@{bot2}}
+\index{bot2@{bot2}!bot.\+h@{bot.\+h}}
+\subsubsection{\texorpdfstring{bot2()}{bot2()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO} bot2 (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Jogada que o ro\textquotesingle{}bot\textquotesingle{} de nível 2 escolhe. 
+
+Este ro\textquotesingle{}bot\textquotesingle{} escolhe a jogada que lhe dá mais pontuação, tendo por base uma tabela predefinida.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Posição que o ro\textquotesingle{}bot\textquotesingle{} \char`\"{}escolheu\char`\"{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{bot_8h_a8fa113955dafa56905259b31a855df76}\label{bot_8h_a8fa113955dafa56905259b31a855df76}} 
+\index{bot.\+h@{bot.\+h}!bot2worth@{bot2worth}}
+\index{bot2worth@{bot2worth}!bot.\+h@{bot.\+h}}
+\subsubsection{\texorpdfstring{bot2worth()}{bot2worth()}}
+{\footnotesize\ttfamily int bot2worth (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO}}]{p,  }\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Faz a diferença de pontuações do ro\textquotesingle{}bot\textquotesingle{} e do jogador, tendo em conta uma jogada, e utilizando como forma de medir a pontuação, uma tabela predefinida (tab\+Val). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Lista de posições possiveis, sendo apenas a primeira testada. \\
+\hline
+{\em e} & Estado antes da jogada a ser testada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Diferença de pontuações depois da jogada. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{bot_8h_afad6deb9a99e0250538202ea15b04ee6}\label{bot_8h_afad6deb9a99e0250538202ea15b04ee6}} 
+\index{bot.\+h@{bot.\+h}!bot3@{bot3}}
+\index{bot3@{bot3}!bot.\+h@{bot.\+h}}
+\subsubsection{\texorpdfstring{bot3()}{bot3()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO} bot3 (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Jogada que o ro\textquotesingle{}bot\textquotesingle{} de nível 3 escolhe. 
+
+Este ro\textquotesingle{}bot\textquotesingle{} escolhe a jogada tendo em conta um algoritmo min\+Max, ou seja, de modo em que no pior dos casos, a jogada posterior realizada pelo oponente leve à menor perda possível (tendo por base a tabela do bot 2).
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Jogada que o ro\textquotesingle{}bot\textquotesingle{} escolheu. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{bot_8h_ac315444d8613e19a02959f0f8569b854}\label{bot_8h_ac315444d8613e19a02959f0f8569b854}} 
+\index{bot.\+h@{bot.\+h}!bot\+Jogar@{bot\+Jogar}}
+\index{bot\+Jogar@{bot\+Jogar}!bot.\+h@{bot.\+h}}
+\subsubsection{\texorpdfstring{bot\+Jogar()}{botJogar()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} bot\+Jogar (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Função que chama o bot de nível a ser utilizado e efetua a jogada na posição que este \char`\"{}decide\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Estado depois da jogada do ro\textquotesingle{}bot\textquotesingle{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{bot_8h_a3285439cde3ff42406cb7afb809b43f7}\label{bot_8h_a3285439cde3ff42406cb7afb809b43f7}} 
+\index{bot.\+h@{bot.\+h}!buildr\+T\+Tree@{buildr\+T\+Tree}}
+\index{buildr\+T\+Tree@{buildr\+T\+Tree}!bot.\+h@{bot.\+h}}
+\subsubsection{\texorpdfstring{buildr\+T\+Tree()}{buildrTTree()}}
+{\footnotesize\ttfamily \hyperlink{bot_8h_a38cf9545aa5d47a9e94a13adcff582e0}{r\+T\+Tree} buildr\+T\+Tree (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Constrói uma \char`\"{}árvore\char`\"{} de posições, iniciada por um estado. 
+
+Apenas põe o estado recebido no inicio e chama a função build\+T\+Tree.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Árvore criada. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structraiz_trepadeira}{raiz\+Trepadeira}, built\+T\+Tree 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{bot_8h_a41a227a6d7fff9973c304001082ff0cf}\label{bot_8h_a41a227a6d7fff9973c304001082ff0cf}} 
+\index{bot.\+h@{bot.\+h}!build\+T\+Tree@{build\+T\+Tree}}
+\index{build\+T\+Tree@{build\+T\+Tree}!bot.\+h@{bot.\+h}}
+\subsubsection{\texorpdfstring{build\+T\+Tree()}{buildTTree()}}
+{\footnotesize\ttfamily \hyperlink{bot_8h_aae2ffd32242a51942985cb9ba7d8f6fa}{T\+Tree} build\+T\+Tree (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Constrói uma \char`\"{}árvore\char`\"{} de posicões. 
+
+Coloca em cada nodo uma posição possivel ao jogador atual e coloca como lista de posições, as posições possiveis ao próximo jogador caso fosse efetuada a jogada na posição do nodo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Árvore criada. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structtrepadeira}{trepadeira} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{bot_8h_a42c5f480841eabdb79646382d23b50db}\label{bot_8h_a42c5f480841eabdb79646382d23b50db}} 
+\index{bot.\+h@{bot.\+h}!escolhamin\+Max@{escolhamin\+Max}}
+\index{escolhamin\+Max@{escolhamin\+Max}!bot.\+h@{bot.\+h}}
+\subsubsection{\texorpdfstring{escolhamin\+Max()}{escolhaminMax()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO} escolhamin\+Max (\begin{DoxyParamCaption}\item[{\hyperlink{bot_8h_a38cf9545aa5d47a9e94a13adcff582e0}{r\+T\+Tree}}]{r }\end{DoxyParamCaption})}
+
+
+
+Decide de entre as folhas de uma árvore \textquotesingle{}\hyperlink{structraiz_trepadeira}{raiz\+Trepadeira}\textquotesingle{} reduzida (depois da atuação de \textquotesingle{}menor2jogada\textquotesingle{}) qual a que implica a uma perda menor/ganho maior (se possivel), jogando na árvore \textquotesingle{}trepadeira\textquotesingle{} em que esta folha está contida. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Árvore \textquotesingle{}\hyperlink{structraiz_trepadeira}{raiz\+Trepadeira}\textquotesingle{} a analisar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Jogada escolhida. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{bot_8h_a9e0d08674709820849fc036c437244e8}\label{bot_8h_a9e0d08674709820849fc036c437244e8}} 
+\index{bot.\+h@{bot.\+h}!free1\+T\+Tree@{free1\+T\+Tree}}
+\index{free1\+T\+Tree@{free1\+T\+Tree}!bot.\+h@{bot.\+h}}
+\subsubsection{\texorpdfstring{free1\+T\+Tree()}{free1TTree()}}
+{\footnotesize\ttfamily void free1\+T\+Tree (\begin{DoxyParamCaption}\item[{\hyperlink{bot_8h_aae2ffd32242a51942985cb9ba7d8f6fa}{T\+Tree} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+Liberta todo o espaço ocupado por um nodo de uma árvore \textquotesingle{}trepadeira\textquotesingle{}, ficando assim a apontar para o nodo seguinte. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Árvore a libertar. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{bot_8h_a8a500f340a7693b35169b5c33bc690ab}\label{bot_8h_a8a500f340a7693b35169b5c33bc690ab}} 
+\index{bot.\+h@{bot.\+h}!maior\+Score\+Pos@{maior\+Score\+Pos}}
+\index{maior\+Score\+Pos@{maior\+Score\+Pos}!bot.\+h@{bot.\+h}}
+\subsubsection{\texorpdfstring{maior\+Score\+Pos()}{maiorScorePos()}}
+{\footnotesize\ttfamily void maior\+Score\+Pos (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e,  }\item[{\hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO}}]{jog1,  }\item[{\hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO} $\ast$}]{jog2 }\end{DoxyParamCaption})}
+
+
+
+Reduz uma lista de posições a uma só posição, posição esta que é considerada a melhor (segundo a pontuação do bot 2) caso seja efetuada uma jogada prévia (também indicada). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual. \\
+\hline
+{\em jog1} & \textquotesingle{}Jogada prévia\textquotesingle{}. \\
+\hline
+{\em jog2} & Antes\+: Lista de todas as jogadas possíveis. Depois\+: Lista apenas com a melhor jogada. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{bot_8h_ad7ea92ada7c1f4caae91e24e8224cba4}\label{bot_8h_ad7ea92ada7c1f4caae91e24e8224cba4}} 
+\index{bot.\+h@{bot.\+h}!menor2jogada@{menor2jogada}}
+\index{menor2jogada@{menor2jogada}!bot.\+h@{bot.\+h}}
+\subsubsection{\texorpdfstring{menor2jogada()}{menor2jogada()}}
+{\footnotesize\ttfamily void menor2jogada (\begin{DoxyParamCaption}\item[{\hyperlink{bot_8h_a38cf9545aa5d47a9e94a13adcff582e0}{r\+T\+Tree} $\ast$}]{r }\end{DoxyParamCaption})}
+
+
+
+Reduz o tamanho (caso seja maior que 1) da lista de posições contida em cada nodo de uma árvores de posições. 
+
+Chama a função \textquotesingle{}maior\+Score\+Pos\textquotesingle{} para todas as sub-\/árvores \textquotesingle{}trepadeira\textquotesingle{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Antes\+: Árvore em que cada sub-\/árvore \textquotesingle{}trepadeira\textquotesingle{} possui uma lista com todas as posições possiveis derivadas. Depois\+: Árvore em a lista de posições foi reduzida a uma posição. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{bot_8c_a8a500f340a7693b35169b5c33bc690ab}{maior\+Score\+Pos} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{bot_8h_a8a969ec8f737d078f23f63752eeec87b}\label{bot_8h_a8a969ec8f737d078f23f63752eeec87b}} 
+\index{bot.\+h@{bot.\+h}!rand\+\_\+between@{rand\+\_\+between}}
+\index{rand\+\_\+between@{rand\+\_\+between}!bot.\+h@{bot.\+h}}
+\subsubsection{\texorpdfstring{rand\+\_\+between()}{rand\_between()}}
+{\footnotesize\ttfamily int rand\+\_\+between (\begin{DoxyParamCaption}\item[{int}]{min,  }\item[{int}]{max }\end{DoxyParamCaption})}
+
+
+
+Função que devolve um inteiro de entre um intervalo de valores. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & Limite inferior do intervalo. \\
+\hline
+{\em max} & Limite superior do intervalo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor entre o mínimo(incluindo) e o máximo dados. 
+\end{DoxyReturn}

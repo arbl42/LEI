@@ -1,0 +1,278 @@
+\hypertarget{comando_8h}{}\section{comando.\+h File Reference}
+\label{comando_8h}\index{comando.\+h@{comando.\+h}}
+
+
+Definições dos comandos disponíveis ao utilizador.  
+
+
+{\ttfamily \#include \char`\"{}estado.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stack.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} \hyperlink{comando_8h_a8f40a5e075bcf8b3496275bf0b450440}{cmd\+\_\+N} (\hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK} $\ast$s, \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e, char arg)
+\begin{DoxyCompactList}\small\item\em Comando a partir do qual o jogador começa um novo jogo manual, indicando a primeira peça a jogar. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} \hyperlink{comando_8h_a90124644b824df33ee319a00d5ecf360}{cmd\+\_\+L} (\hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK} $\ast$s, \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e, char arg\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Comando para ler um ficheiro de jogo. \end{DoxyCompactList}\item 
+void \hyperlink{comando_8h_a9171c782d901c95197729f7beaf36eb3}{cmd\+\_\+E} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e, char arg\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Comando para escrever o estado do jogo num determinado ficheiro. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} \hyperlink{comando_8h_a232ce4afc30ac24a671c4fb0b4ad0f9c}{cmd\+\_\+J} (\hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK} $\ast$s, \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e, int l, int c)
+\begin{DoxyCompactList}\small\item\em Comando para jogar numa determinada posição (linha,coluna). \end{DoxyCompactList}\item 
+void \hyperlink{comando_8h_a3df9f72a19e7ec350156075abd94d1bc}{cmd\+\_\+S} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Comando que indica as posições de jogada válida (com \textquotesingle{}.\textquotesingle{}). \end{DoxyCompactList}\item 
+void \hyperlink{comando_8h_a6bd42987e0c0ef9715cf8c59ee23eb4e}{cmd\+\_\+H} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Comando que oferece uma sugestão de jogada (a melhor jogada possível de acordo com o bot3). \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} \hyperlink{comando_8h_a7972ef3158b67e388999e537b0e08e53}{cmd\+\_\+U} (\hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK} $\ast$s, \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Comando que anula a última jogada executada. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} \hyperlink{comando_8h_a5d7f692e3fabc2e77dd060f9e75392d4}{cmd\+\_\+A} (\hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK} $\ast$s, \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e, char arg, int level)
+\begin{DoxyCompactList}\small\item\em Comando que comeca um novo jogo contra um ro\textquotesingle{}bot\textquotesingle{} (de dificuldade 1,2 ou 3). \end{DoxyCompactList}\item 
+void \hyperlink{comando_8h_ae7c17c0be23495a9d0ff9c88ba0b5a18}{cmd\+\_\+C} (int n, char arg\mbox{[}$\,$\mbox{]}, char nomeant\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Comando que inicia/continua um campeonato entre ro\textquotesingle{}bot\textquotesingle{}s. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definições dos comandos disponíveis ao utilizador. 
+
+\begin{DoxyAuthor}{Authors}
+Grupo 4 -\/ P\+L1 
+\end{DoxyAuthor}
+\begin{DoxyAuthor}{Author}
+Romeu Silva -\/ A89617 
+
+Ariana Lousada -\/ A87998 
+
+Ricardo Carvalho -\/ A89504 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{comando_8h_a5d7f692e3fabc2e77dd060f9e75392d4}\label{comando_8h_a5d7f692e3fabc2e77dd060f9e75392d4}} 
+\index{comando.\+h@{comando.\+h}!cmd\+\_\+A@{cmd\+\_\+A}}
+\index{cmd\+\_\+A@{cmd\+\_\+A}!comando.\+h@{comando.\+h}}
+\subsubsection{\texorpdfstring{cmd\+\_\+\+A()}{cmd\_A()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} cmd\+\_\+A (\begin{DoxyParamCaption}\item[{\hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK} $\ast$}]{s,  }\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e,  }\item[{char}]{arg,  }\item[{int}]{level }\end{DoxyParamCaption})}
+
+
+
+Comando que comeca um novo jogo contra um ro\textquotesingle{}bot\textquotesingle{} (de dificuldade 1,2 ou 3). 
+
+Utilização\+: A $<$peca$>$ $<$nivel$>$
+
+Esta função permite ao jogador começar um modo de jogo automático, no qual tem a opção de escolher um ro\textquotesingle{}bot\textquotesingle{} de dificuldade 1(fácil), 2(intermédio) ou 3(difícil).
+
+A função começa for testar se a peça escolhida e nível são válidos e caso não sejam, retorna o estado do jogo sem quaisquer alterações. No caso de ser válida, prossegue-\/se para um jogo no modo automático (jogador contra ro\textquotesingle{}bot\textquotesingle{}), apagando os salvamentos prévios de estados(stack).
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Apontador para a pilha de estados que apareceram durante o correr do jogo atual, ordenados do mais recente para o mais antigo. Se a peça for válida, a stack depois da utilização do comando apenas terá o estado inicial. \\
+\hline
+{\em e} & Estado atual do jogo. \\
+\hline
+{\em arg} & Peça com que o ro\textquotesingle{}bot\textquotesingle{} irá jogar. \\
+\hline
+{\em level} & Nível de dificuldade do ro\textquotesingle{}bot\textquotesingle{}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+e Estado do jogo alterado, caso a peça e nivel sejam válidos. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{comando_8h_ae7c17c0be23495a9d0ff9c88ba0b5a18}\label{comando_8h_ae7c17c0be23495a9d0ff9c88ba0b5a18}} 
+\index{comando.\+h@{comando.\+h}!cmd\+\_\+C@{cmd\+\_\+C}}
+\index{cmd\+\_\+C@{cmd\+\_\+C}!comando.\+h@{comando.\+h}}
+\subsubsection{\texorpdfstring{cmd\+\_\+\+C()}{cmd\_C()}}
+{\footnotesize\ttfamily void cmd\+\_\+C (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{char}]{arg\mbox{[}$\,$\mbox{]},  }\item[{char}]{nomeant\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Comando que inicia/continua um campeonato entre ro\textquotesingle{}bot\textquotesingle{}s. 
+
+Utilização\+: C $<$ficheiro$>$
+
+Utilização alternativa (caso já tenha sido utilizada a outra)\+: C
+
+Este comando tenta ler um ficheiro de jogo, se não for possivel, cria um ficheiro com os dados necessários ao inicio do jogo, caso seja, lê, joga(se possível) de acordo com o bot3 e guarda o jogo. Caso o jogo tenha acabado, guarda o jogo com um novo nome, onde indica quem ganhou.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Número de argumentos que o utilizador deu (contando com o C), de modo a saber se foi usada a utilização principal ou a alternativa. \\
+\hline
+{\em arg} & Nome do ficheiro de jogo. \\
+\hline
+{\em nomeant} & Nome do ficheiro de jogo atribuído anteriormente (na sua última utilização). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{comando_8h_a9171c782d901c95197729f7beaf36eb3}\label{comando_8h_a9171c782d901c95197729f7beaf36eb3}} 
+\index{comando.\+h@{comando.\+h}!cmd\+\_\+E@{cmd\+\_\+E}}
+\index{cmd\+\_\+E@{cmd\+\_\+E}!comando.\+h@{comando.\+h}}
+\subsubsection{\texorpdfstring{cmd\+\_\+\+E()}{cmd\_E()}}
+{\footnotesize\ttfamily void cmd\+\_\+E (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e,  }\item[{char}]{arg\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Comando para escrever o estado do jogo num determinado ficheiro. 
+
+Utilização\+: E $<$ficheiro$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual do jogo. \\
+\hline
+{\em arg} & Nome do ficheiro onde vai ser guardado o estado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{estado_8h_aff716daecc3f4d272bdf3cf7f29aad16}{escrever1linha}, \hyperlink{estado_8h_a4417c00fac7bd61f66a8f6adb1a6eb40}{escrever\+Tabuleiro} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{comando_8h_a6bd42987e0c0ef9715cf8c59ee23eb4e}\label{comando_8h_a6bd42987e0c0ef9715cf8c59ee23eb4e}} 
+\index{comando.\+h@{comando.\+h}!cmd\+\_\+H@{cmd\+\_\+H}}
+\index{cmd\+\_\+H@{cmd\+\_\+H}!comando.\+h@{comando.\+h}}
+\subsubsection{\texorpdfstring{cmd\+\_\+\+H()}{cmd\_H()}}
+{\footnotesize\ttfamily void cmd\+\_\+H (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Comando que oferece uma sugestão de jogada (a melhor jogada possível de acordo com o bot3). 
+
+Utilização\+: H
+
+A função começa por verificar se existem jogadas possíveis no tabuleiro. Caso não existam, a função imprime o tabuleiro normalmente (função \textquotesingle{}printa\textquotesingle{}). Caso existam, a função seleciona a jogada de acordo com o bot3 para e coloca um \textquotesingle{}?\textquotesingle{} nessa posição.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual do jogo. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{comando_8h_a232ce4afc30ac24a671c4fb0b4ad0f9c}\label{comando_8h_a232ce4afc30ac24a671c4fb0b4ad0f9c}} 
+\index{comando.\+h@{comando.\+h}!cmd\+\_\+J@{cmd\+\_\+J}}
+\index{cmd\+\_\+J@{cmd\+\_\+J}!comando.\+h@{comando.\+h}}
+\subsubsection{\texorpdfstring{cmd\+\_\+\+J()}{cmd\_J()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} cmd\+\_\+J (\begin{DoxyParamCaption}\item[{\hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK} $\ast$}]{s,  }\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e,  }\item[{int}]{l,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Comando para jogar numa determinada posição (linha,coluna). 
+
+Utilização\+: J $<$\+Linha$>$ $<$\+Coluna$>$
+
+A função começa por avaliar se a jogada é válida. Caso não o seja, retorna o estado recebido sem quaisquer alterações. Se a jogada for válida, a peça anteriormente escolhida pelo jogador é colocada na posição (l,c), e são alteradas todas as peças necessárias de acordo com as regras do jogo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Apontador para a pilha de estados que apareceram durante o correr do jogo atual, ordenados do mais recente para o mais antigo. Se a jogada for válida, adiciona o novo estado ao topo da stack. \\
+\hline
+{\em e} & Estado do jogo atual. \\
+\hline
+{\em l} & Linha da posição a jogar (entre 1 e 8). \\
+\hline
+{\em c} & Coluna da posição a jogar (entre 1 e 8). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+e Estado do jogo alterado(caso a jogada seja válida). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{comando_8h_a90124644b824df33ee319a00d5ecf360}\label{comando_8h_a90124644b824df33ee319a00d5ecf360}} 
+\index{comando.\+h@{comando.\+h}!cmd\+\_\+L@{cmd\+\_\+L}}
+\index{cmd\+\_\+L@{cmd\+\_\+L}!comando.\+h@{comando.\+h}}
+\subsubsection{\texorpdfstring{cmd\+\_\+\+L()}{cmd\_L()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} cmd\+\_\+L (\begin{DoxyParamCaption}\item[{\hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK} $\ast$}]{s,  }\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e,  }\item[{char}]{arg\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Comando para ler um ficheiro de jogo. 
+
+Utilização\+: L $<$ficheiro$>$
+
+A função começa por verificar se o ficheiro escolhido existe.
+
+Caso não exista, é retornado o estado recebido pela função sem quaisquer alterações.
+
+Se existir, a função lê o ficheiro, guardando os dados do estado nos sitios correspondentes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Apontador para a pilha de estados que apareceram durante o correr do jogo atual, ordenados do mais recente para o mais antigo. Se o ficheiro existir, a stack depois da utilização do comando apenas terá o estado lido. \\
+\hline
+{\em e} & Estado atual do jogo. \\
+\hline
+{\em arg} & Nome do ficheiro indicado pelo utilizador. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+e Estado do jogo alterado (caso o ficheiro exista). 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{estado_8h_aa5f7bf1a8d917827ea228542f435cbb9}{ler1linha}, \hyperlink{estado_8h_afe511b2f19178d489fabd9c2a18f6fff}{ler\+Tabuleiro}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{comando_8h_a8f40a5e075bcf8b3496275bf0b450440}\label{comando_8h_a8f40a5e075bcf8b3496275bf0b450440}} 
+\index{comando.\+h@{comando.\+h}!cmd\+\_\+N@{cmd\+\_\+N}}
+\index{cmd\+\_\+N@{cmd\+\_\+N}!comando.\+h@{comando.\+h}}
+\subsubsection{\texorpdfstring{cmd\+\_\+\+N()}{cmd\_N()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} cmd\+\_\+N (\begin{DoxyParamCaption}\item[{\hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK} $\ast$}]{s,  }\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e,  }\item[{char}]{arg }\end{DoxyParamCaption})}
+
+
+
+Comando a partir do qual o jogador começa um novo jogo manual, indicando a primeira peça a jogar. 
+
+Utilização\+: N $<$pe ça$>$=\char`\"{}\char`\"{}$>$
+
+A função começa por testar se a peça escolhida pelo jogador é válida (se corresponde a \textquotesingle{}X\textquotesingle{} ou a \textquotesingle{}O\textquotesingle{}).
+
+Caso não o seja, a função retorna o estado recebido sem quaisquer alterações.
+
+No caso de ser válida, prossegue-\/se para um jogo no modo manual (jogador contra jogador), apagando os salvamentos prévios de estados(stack).
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Apontador para a pilha de estados que apareceram durante o correr do jogo atual, ordenados do mais recente para o mais antigo. Se a peça for válida, a stack depois da utilização do comando apenas terá o estado inicial. \\
+\hline
+{\em e} & Estado atual do jogo. \\
+\hline
+{\em arg} & Peça escolhida pelo jogador como sendo a primeira a jogar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+e Estado do jogo após as alterações(se existentes) feitas a partir deste comando. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{comando_8h_a3df9f72a19e7ec350156075abd94d1bc}\label{comando_8h_a3df9f72a19e7ec350156075abd94d1bc}} 
+\index{comando.\+h@{comando.\+h}!cmd\+\_\+S@{cmd\+\_\+S}}
+\index{cmd\+\_\+S@{cmd\+\_\+S}!comando.\+h@{comando.\+h}}
+\subsubsection{\texorpdfstring{cmd\+\_\+\+S()}{cmd\_S()}}
+{\footnotesize\ttfamily void cmd\+\_\+S (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Comando que indica as posições de jogada válida (com \textquotesingle{}.\textquotesingle{}). 
+
+Utilização\+: S
+
+Esta função de maneira similar à função \textquotesingle{}printa\textquotesingle{}, mas antes de imprimir uma posição, verifica se esta é válida para a próxima peça(dado armazenado no estado) e caso o seja imprime um \textquotesingle{}.\textquotesingle{} ao invés do \textquotesingle{}-\/\textquotesingle{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual do jogo. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{comando_8h_a7972ef3158b67e388999e537b0e08e53}\label{comando_8h_a7972ef3158b67e388999e537b0e08e53}} 
+\index{comando.\+h@{comando.\+h}!cmd\+\_\+U@{cmd\+\_\+U}}
+\index{cmd\+\_\+U@{cmd\+\_\+U}!comando.\+h@{comando.\+h}}
+\subsubsection{\texorpdfstring{cmd\+\_\+\+U()}{cmd\_U()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} cmd\+\_\+U (\begin{DoxyParamCaption}\item[{\hyperlink{stack_8h_aaeb1983b33eaff1b8b15c84731aaa949}{S\+T\+A\+CK} $\ast$}]{s,  }\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Comando que anula a última jogada executada. 
+
+Utilização\+: U
+
+Esta função utiliza a stack e começa por testar se é possivel voltar atrás, isto é, se a stack tem mais que um elemento. Caso seja, elimina o que está no topo da stack, isto é, a última jogada efetuada. Isto é possível fazer até o estado ser igual ao estado inicial do jogo, ou estado obtido pela leitura do ficheiro, caso tenha sido iniciado dessa maneira.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Apontador para a pilha de estados que apareceram durante o correr do jogo atual, ordenados do mais recente para o mais antigo. Se a stack tiver mais que um elemento, depois da execução do comando a stack terá menos um elemento(o que estava previamente no topo). \\
+\hline
+{\em e} & Estado atual do jogo (para devolver caso não seja possivel voltar atrás). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+e Estado do jogo alterado(caso tenha sido possivel voltar atrás). 
+\end{DoxyReturn}

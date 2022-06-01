@@ -1,0 +1,617 @@
+\hypertarget{estado_8h}{}\section{estado.\+h File Reference}
+\label{estado_8h}\index{estado.\+h@{estado.\+h}}
+
+
+Definição do estado i.\+e. tabuleiro. Representação matricial do tabuleiro.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structscore}{score}
+\begin{DoxyCompactList}\small\item\em Estrutura que armazena a pontuação de ambos jogadores. \end{DoxyCompactList}\item 
+struct \hyperlink{structposicao}{posicao}
+\begin{DoxyCompactList}\small\item\em Lista de posições (linha,coluna). \end{DoxyCompactList}\item 
+struct \hyperlink{structestado}{estado}
+\begin{DoxyCompactList}\small\item\em Estrutura que armazena o estado do jogo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{estado_8h_a20467fec7e588ad91d3dbd402539c699}\label{estado_8h_a20467fec7e588ad91d3dbd402539c699}} 
+typedef struct \hyperlink{structscore}{score} \hyperlink{estado_8h_a20467fec7e588ad91d3dbd402539c699}{S\+C\+O\+RE}
+\begin{DoxyCompactList}\small\item\em Estrutura que armazena a pontuação de ambos jogadores. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}\label{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}} 
+typedef struct \hyperlink{structposicao}{posicao} $\ast$ \hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO}
+\begin{DoxyCompactList}\small\item\em Lista de posições (linha,coluna). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}\label{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}} 
+typedef struct \hyperlink{structestado}{estado} \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}
+\begin{DoxyCompactList}\small\item\em Estrutura que armazena o estado do jogo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{estado_8h_abfd806e47e2e69b38156c2eab6fda6c0}\label{estado_8h_abfd806e47e2e69b38156c2eab6fda6c0}} 
+enum \hyperlink{estado_8h_abfd806e47e2e69b38156c2eab6fda6c0}{V\+A\+L\+OR} \{ {\bfseries V\+A\+Z\+IA}, 
+{\bfseries V\+A\+L\+O\+R\+\_\+X}, 
+{\bfseries V\+A\+L\+O\+R\+\_\+O}
+ \}\begin{DoxyCompactList}\small\item\em Definição de valores possiveis no tabuleiro. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{estado_8h_ad0068077da76fd8f3f18505c96e2edc7}{peca\+Val} (char p)
+\begin{DoxyCompactList}\small\item\em Verifica se um caracter corresponde a alguma peça dos Jogadores. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} \hyperlink{estado_8h_ab49665f16150e8cb9ffbf799edfecf7e}{tab\+Inicial} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Recomeça o tabuleiro de modo a ter apenas as peças iniciais. \end{DoxyCompactList}\item 
+void \hyperlink{estado_8h_a87aa3183cc81202597e561ca60bc802d}{printa} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Imprime no ecrã o tabuleiro. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} \hyperlink{estado_8h_aa5f7bf1a8d917827ea228542f435cbb9}{ler1linha} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e, F\+I\+LE $\ast$f)
+\begin{DoxyCompactList}\small\item\em Lê a primeira linha de um ficheiro, guardando os dados nos sitios adequados. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} \hyperlink{estado_8h_afe511b2f19178d489fabd9c2a18f6fff}{ler\+Tabuleiro} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e, F\+I\+LE $\ast$f)
+\begin{DoxyCompactList}\small\item\em Lê o tabuleiro de um ficheiro, guardando os dados nos sitios adequados. \end{DoxyCompactList}\item 
+void \hyperlink{estado_8h_aff716daecc3f4d272bdf3cf7f29aad16}{escrever1linha} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e, F\+I\+LE $\ast$f)
+\begin{DoxyCompactList}\small\item\em Escreve os dados correspondentes à primeira linha num ficheiro. \end{DoxyCompactList}\item 
+void \hyperlink{estado_8h_a4417c00fac7bd61f66a8f6adb1a6eb40}{escrever\+Tabuleiro} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e, F\+I\+LE $\ast$f)
+\begin{DoxyCompactList}\small\item\em Escreve os dados correspondentes ao tabuleiro num ficheiro. \end{DoxyCompactList}\item 
+int \hyperlink{estado_8h_a2679c80f0984abde7db8f4068ce9e114}{in\+Tab} (int l, int c)
+\begin{DoxyCompactList}\small\item\em Verifica se uma posição pertence ao tabuleiro. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_abfd806e47e2e69b38156c2eab6fda6c0}{V\+A\+L\+OR} \hyperlink{estado_8h_a4057d16adde3613bf9f47073d480842d}{peca\+Sim} (\hyperlink{estado_8h_abfd806e47e2e69b38156c2eab6fda6c0}{V\+A\+L\+OR} v)
+\begin{DoxyCompactList}\small\item\em Indica a peça simétrica (contrária). \end{DoxyCompactList}\item 
+int \hyperlink{estado_8h_a8d856d79dad66f9bec5728910b46a05c}{pos\+Possivel} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e, int l, int c)
+\begin{DoxyCompactList}\small\item\em Verifica se é possivel a próxima jogada ser numa dada posição. \end{DoxyCompactList}\item 
+int \hyperlink{estado_8h_a58ecdeb781e23c61644f01e71dff5e1e}{pos\+Possivel\+Dir} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e, int l, int c, int lv, int cv)
+\begin{DoxyCompactList}\small\item\em Verifica se é possivel jogar tendo apenas em conta uma direção. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} \hyperlink{estado_8h_aec2bd1773e891408a02b11144361ff54}{virar\+Pecas} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e, int l, int c)
+\begin{DoxyCompactList}\small\item\em Virar todas as peças necessárias numa direção ao fim de uma jogada. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} \hyperlink{estado_8h_a3035bd575bbaa87cc1f5efb3c7389585}{virar\+Pecas\+Dir} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e, int l, int c, int lv, int cv)
+\begin{DoxyCompactList}\small\item\em Virar as peças necessárias numa direção ao fim de uma jogada. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} \hyperlink{estado_8h_a65bc5c21a62cc969af9de93b3c49cf3d}{jogar} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e, int l, int c)
+\begin{DoxyCompactList}\small\item\em Efetua uma jogada válida. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} \hyperlink{estado_8h_ad2f931bf3cea6fab23ff99f8e5789d7b}{skip\+Jogvs\+Jog} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Num jogo entre dois jogadores (não ro\textquotesingle{}bot\textquotesingle{}s), verifica se deve saltar a próxima jogada ou até mesmo acabar o jogo. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} \hyperlink{estado_8h_aaad22c61de6c3a7f518f554524787591}{skip\+Jogvs\+Bot} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Num jogo entre um jogador e um ro\textquotesingle{}bot\textquotesingle{}, durante o turno do jogador, verifica se deve saltar a próxima jogada ou até mesmo acabar o jogo. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} \hyperlink{estado_8h_a8855de670fbc771697d49673058603dc}{skip\+Botvs\+Jog} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Num jogo entre um jogador e um ro\textquotesingle{}bot\textquotesingle{}, durante o turno do ro\textquotesingle{}bot\textquotesingle{}, verifica se deve saltar a próxima jogada ou até mesmo acabar o jogo. \end{DoxyCompactList}\item 
+void \hyperlink{estado_8h_a915e6d8bb8f2c8e962befa387059bf35}{fim} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Mensagem de fim de jogo. \end{DoxyCompactList}\item 
+int \hyperlink{estado_8h_aacab950f3b88e7a23030d321220d4a85}{num\+Jog\+Pos} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Indica o número de jogadas que o próximo jogador pode efetuar. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a20467fec7e588ad91d3dbd402539c699}{S\+C\+O\+RE} \hyperlink{estado_8h_ab00c6745a5760eb47a71743fd66237bf}{contagem\+Score} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Indica o número de peças atual de cada jogador. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{estado_8h_a2c340c7cadca6d79ca9bf38a0f6c1380}\label{estado_8h_a2c340c7cadca6d79ca9bf38a0f6c1380}} 
+void {\bfseries acabar\+Camp} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e, char $\ast$file)
+\item 
+\hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO} \hyperlink{estado_8h_a1f7f607b0e4d9a3423af7a3851e285db}{new\+LP} (int l, int c, \hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO} next)
+\begin{DoxyCompactList}\small\item\em Cria um elemento P\+O\+S\+I\+C\+AO com os dados fornecidos. \end{DoxyCompactList}\item 
+\hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO} \hyperlink{estado_8h_a00f2009671e8b9afd262a06dbb362b7e}{lista\+Pos} (\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Cria uma lista das posicões onde é possivel jogar. \end{DoxyCompactList}\item 
+void \hyperlink{estado_8h_adbf134d59f24361a6b6d7ed2a39c35b7}{display\+LP} (\hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO} p)
+\begin{DoxyCompactList}\small\item\em Mostra a lista de posições onde é possível jogar. \end{DoxyCompactList}\item 
+void \hyperlink{estado_8h_a459733c1095a5e0b2c631d7c9c5b2280}{free1\+LP} (\hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Retira o primeiro elemento de uma lista de posições(se existente), libertando a sua memória. \end{DoxyCompactList}\item 
+void \hyperlink{estado_8h_a1349571885ae767044b76e72228f9caa}{free\+LP} (\hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO} p)
+\begin{DoxyCompactList}\small\item\em Liberta a memória alocada por uma lista de posições. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definição do estado i.\+e. tabuleiro. Representação matricial do tabuleiro. 
+
+\begin{DoxyAuthor}{Authors}
+Grupo 4 -\/ P\+L1 
+\end{DoxyAuthor}
+\begin{DoxyAuthor}{Author}
+Romeu Silva -\/ A89617 
+
+Ariana Lousada -\/ A87998 
+
+Ricardo Carvalho -\/ A89504 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{estado_8h_ab00c6745a5760eb47a71743fd66237bf}\label{estado_8h_ab00c6745a5760eb47a71743fd66237bf}} 
+\index{estado.\+h@{estado.\+h}!contagem\+Score@{contagem\+Score}}
+\index{contagem\+Score@{contagem\+Score}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{contagem\+Score()}{contagemScore()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a20467fec7e588ad91d3dbd402539c699}{S\+C\+O\+RE} contagem\+Score (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Indica o número de peças atual de cada jogador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Estrutura que contem o número de peças atual de cada jogador. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8h_adbf134d59f24361a6b6d7ed2a39c35b7}\label{estado_8h_adbf134d59f24361a6b6d7ed2a39c35b7}} 
+\index{estado.\+h@{estado.\+h}!display\+LP@{display\+LP}}
+\index{display\+LP@{display\+LP}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{display\+L\+P()}{displayLP()}}
+{\footnotesize\ttfamily void display\+LP (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO}}]{p }\end{DoxyParamCaption})}
+
+
+
+Mostra a lista de posições onde é possível jogar. 
+
+Esta função é apenas utilizada em testes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Lista de posicoes a ser imprimida. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{estado_8h_aff716daecc3f4d272bdf3cf7f29aad16}\label{estado_8h_aff716daecc3f4d272bdf3cf7f29aad16}} 
+\index{estado.\+h@{estado.\+h}!escrever1linha@{escrever1linha}}
+\index{escrever1linha@{escrever1linha}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{escrever1linha()}{escrever1linha()}}
+{\footnotesize\ttfamily void escrever1linha (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e,  }\item[{F\+I\+LE $\ast$}]{f }\end{DoxyParamCaption})}
+
+
+
+Escreve os dados correspondentes à primeira linha num ficheiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado que contem os dados (modo/nível e peça) a escrever. \\
+\hline
+{\em f} & Apontador para o inicio do ficheiro onde se vai escrever. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{estado_8h_a4417c00fac7bd61f66a8f6adb1a6eb40}\label{estado_8h_a4417c00fac7bd61f66a8f6adb1a6eb40}} 
+\index{estado.\+h@{estado.\+h}!escrever\+Tabuleiro@{escrever\+Tabuleiro}}
+\index{escrever\+Tabuleiro@{escrever\+Tabuleiro}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{escrever\+Tabuleiro()}{escreverTabuleiro()}}
+{\footnotesize\ttfamily void escrever\+Tabuleiro (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e,  }\item[{F\+I\+LE $\ast$}]{f }\end{DoxyParamCaption})}
+
+
+
+Escreve os dados correspondentes ao tabuleiro num ficheiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado que contem os dados (tabuleiro) a escrever. \\
+\hline
+{\em f} & Apontador para a segunda linha (inicio do tabuleiro) onde se vai escrever. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{estado_8h_a915e6d8bb8f2c8e962befa387059bf35}\label{estado_8h_a915e6d8bb8f2c8e962befa387059bf35}} 
+\index{estado.\+h@{estado.\+h}!fim@{fim}}
+\index{fim@{fim}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{fim()}{fim()}}
+{\footnotesize\ttfamily void fim (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Mensagem de fim de jogo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{estado_8h_a459733c1095a5e0b2c631d7c9c5b2280}\label{estado_8h_a459733c1095a5e0b2c631d7c9c5b2280}} 
+\index{estado.\+h@{estado.\+h}!free1\+LP@{free1\+LP}}
+\index{free1\+LP@{free1\+LP}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{free1\+L\+P()}{free1LP()}}
+{\footnotesize\ttfamily void free1\+LP (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Retira o primeiro elemento de uma lista de posições(se existente), libertando a sua memória. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Lista de posições de onde vai ser retirado o elemento. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{estado_8h_a1349571885ae767044b76e72228f9caa}\label{estado_8h_a1349571885ae767044b76e72228f9caa}} 
+\index{estado.\+h@{estado.\+h}!free\+LP@{free\+LP}}
+\index{free\+LP@{free\+LP}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{free\+L\+P()}{freeLP()}}
+{\footnotesize\ttfamily void free\+LP (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO}}]{p }\end{DoxyParamCaption})}
+
+
+
+Liberta a memória alocada por uma lista de posições. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Lista de posições a ser libertada. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{estado_8h_a2679c80f0984abde7db8f4068ce9e114}\label{estado_8h_a2679c80f0984abde7db8f4068ce9e114}} 
+\index{estado.\+h@{estado.\+h}!in\+Tab@{in\+Tab}}
+\index{in\+Tab@{in\+Tab}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{in\+Tab()}{inTab()}}
+{\footnotesize\ttfamily int in\+Tab (\begin{DoxyParamCaption}\item[{int}]{l,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Verifica se uma posição pertence ao tabuleiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & Linha (de 0 a 7) da posição. \\
+\hline
+{\em c} & Coluna (de 0 a 7) da posição. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 caso pertença, 0 caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8h_a65bc5c21a62cc969af9de93b3c49cf3d}\label{estado_8h_a65bc5c21a62cc969af9de93b3c49cf3d}} 
+\index{estado.\+h@{estado.\+h}!jogar@{jogar}}
+\index{jogar@{jogar}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{jogar()}{jogar()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} jogar (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e,  }\item[{int}]{l,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Efetua uma jogada válida. 
+
+Coloca a peça no sítio indicado, inverte as peças necessárias e inverte a próxima peça (este último apenas no caso de estar no modo manual).
+
+A função só é chamada quando se sabe que é uma jogada possível.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual. \\
+\hline
+{\em l} & Linha (de 0 a 7) onde foi efetuada a jogada. \\
+\hline
+{\em c} & Coluna (de 0 a 7) onde foi efetuada a jogada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Estado com as devidas alterações. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8h_aa5f7bf1a8d917827ea228542f435cbb9}\label{estado_8h_aa5f7bf1a8d917827ea228542f435cbb9}} 
+\index{estado.\+h@{estado.\+h}!ler1linha@{ler1linha}}
+\index{ler1linha@{ler1linha}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{ler1linha()}{ler1linha()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} ler1linha (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e,  }\item[{F\+I\+LE $\ast$}]{f }\end{DoxyParamCaption})}
+
+
+
+Lê a primeira linha de um ficheiro, guardando os dados nos sitios adequados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado onde vai colocar os novos dados lidos (modo/nível e peça). \\
+\hline
+{\em f} & Apontador para o inicio do ficheiro de onde vai ler. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Estado com os novos dados. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8h_afe511b2f19178d489fabd9c2a18f6fff}\label{estado_8h_afe511b2f19178d489fabd9c2a18f6fff}} 
+\index{estado.\+h@{estado.\+h}!ler\+Tabuleiro@{ler\+Tabuleiro}}
+\index{ler\+Tabuleiro@{ler\+Tabuleiro}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{ler\+Tabuleiro()}{lerTabuleiro()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} ler\+Tabuleiro (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e,  }\item[{F\+I\+LE $\ast$}]{f }\end{DoxyParamCaption})}
+
+
+
+Lê o tabuleiro de um ficheiro, guardando os dados nos sitios adequados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado onde vai colocar os novos dados lidos (tabuleiro). \\
+\hline
+{\em f} & Apontados para a segunda linha(inicio do tabuleiro) do ficheiro onde vai ler. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Estado com os novos dados. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8h_a00f2009671e8b9afd262a06dbb362b7e}\label{estado_8h_a00f2009671e8b9afd262a06dbb362b7e}} 
+\index{estado.\+h@{estado.\+h}!lista\+Pos@{lista\+Pos}}
+\index{lista\+Pos@{lista\+Pos}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{lista\+Pos()}{listaPos()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO} lista\+Pos (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Cria uma lista das posicões onde é possivel jogar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual do jogo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A lista de posições onde é possivel jogar. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8h_a1f7f607b0e4d9a3423af7a3851e285db}\label{estado_8h_a1f7f607b0e4d9a3423af7a3851e285db}} 
+\index{estado.\+h@{estado.\+h}!new\+LP@{new\+LP}}
+\index{new\+LP@{new\+LP}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{new\+L\+P()}{newLP()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO} new\+LP (\begin{DoxyParamCaption}\item[{int}]{l,  }\item[{int}]{c,  }\item[{\hyperlink{estado_8h_a6f525b62d555e8296fd18fa45b7b9497}{P\+O\+S\+I\+C\+AO}}]{next }\end{DoxyParamCaption})}
+
+
+
+Cria um elemento P\+O\+S\+I\+C\+AO com os dados fornecidos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & Linha (de 0 a 7) a guardar. \\
+\hline
+{\em c} & Coluna (de 0 a 7) a guardar. \\
+\hline
+{\em next} & Resto da lista. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nova lista. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8h_aacab950f3b88e7a23030d321220d4a85}\label{estado_8h_aacab950f3b88e7a23030d321220d4a85}} 
+\index{estado.\+h@{estado.\+h}!num\+Jog\+Pos@{num\+Jog\+Pos}}
+\index{num\+Jog\+Pos@{num\+Jog\+Pos}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{num\+Jog\+Pos()}{numJogPos()}}
+{\footnotesize\ttfamily int num\+Jog\+Pos (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Indica o número de jogadas que o próximo jogador pode efetuar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Número de jogadas que o próximo jogador pode efetuar. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8h_a4057d16adde3613bf9f47073d480842d}\label{estado_8h_a4057d16adde3613bf9f47073d480842d}} 
+\index{estado.\+h@{estado.\+h}!peca\+Sim@{peca\+Sim}}
+\index{peca\+Sim@{peca\+Sim}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{peca\+Sim()}{pecaSim()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_abfd806e47e2e69b38156c2eab6fda6c0}{V\+A\+L\+OR} peca\+Sim (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_abfd806e47e2e69b38156c2eab6fda6c0}{V\+A\+L\+OR}}]{v }\end{DoxyParamCaption})}
+
+
+
+Indica a peça simétrica (contrária). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Peça atual. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}X\textquotesingle{} se a peça dada for \textquotesingle{}O\textquotesingle{}, \textquotesingle{}O\textquotesingle{} se a peça dada for \textquotesingle{}X\textquotesingle{}, Vazia se nenhum dos anteriores. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8h_ad0068077da76fd8f3f18505c96e2edc7}\label{estado_8h_ad0068077da76fd8f3f18505c96e2edc7}} 
+\index{estado.\+h@{estado.\+h}!peca\+Val@{peca\+Val}}
+\index{peca\+Val@{peca\+Val}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{peca\+Val()}{pecaVal()}}
+{\footnotesize\ttfamily int peca\+Val (\begin{DoxyParamCaption}\item[{char}]{p }\end{DoxyParamCaption})}
+
+
+
+Verifica se um caracter corresponde a alguma peça dos Jogadores. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Caracter(maiúsculo) a verificar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se o caracter for \textquotesingle{}X\textquotesingle{} ou \textquotesingle{}O\textquotesingle{}, 0 caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8h_a8d856d79dad66f9bec5728910b46a05c}\label{estado_8h_a8d856d79dad66f9bec5728910b46a05c}} 
+\index{estado.\+h@{estado.\+h}!pos\+Possivel@{pos\+Possivel}}
+\index{pos\+Possivel@{pos\+Possivel}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{pos\+Possivel()}{posPossivel()}}
+{\footnotesize\ttfamily int pos\+Possivel (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e,  }\item[{int}]{l,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Verifica se é possivel a próxima jogada ser numa dada posição. 
+
+Apenas verifica se está dentro do tabuleiro e ainda não está ocupada, depois apenas chama a função \textquotesingle{}pos\+Possivel\+Dir\textquotesingle{} para todas as direções.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual. \\
+\hline
+{\em l} & Linha (de 0 a 7) da posição a verificar. \\
+\hline
+{\em c} & Coluna (de 0 a 7) da posição a verificar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 caso seja possível, 0 caso contrário. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{estado_8c_a58ecdeb781e23c61644f01e71dff5e1e}{pos\+Possivel\+Dir} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{estado_8h_a58ecdeb781e23c61644f01e71dff5e1e}\label{estado_8h_a58ecdeb781e23c61644f01e71dff5e1e}} 
+\index{estado.\+h@{estado.\+h}!pos\+Possivel\+Dir@{pos\+Possivel\+Dir}}
+\index{pos\+Possivel\+Dir@{pos\+Possivel\+Dir}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{pos\+Possivel\+Dir()}{posPossivelDir()}}
+{\footnotesize\ttfamily int pos\+Possivel\+Dir (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e,  }\item[{int}]{l,  }\item[{int}]{c,  }\item[{int}]{lv,  }\item[{int}]{cv }\end{DoxyParamCaption})}
+
+
+
+Verifica se é possivel jogar tendo apenas em conta uma direção. 
+
+Uma posição é possível caso, dada um direção, a posição seguinte tem uma peça contrária e, ao percorrer a direção enquanto as peças são contrárias, a peça na posição final (dentro do tabuleiro) for igual à qual se pretende jogar.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual. \\
+\hline
+{\em l} & Linha (de 0 a 7) da posição a verificar. \\
+\hline
+{\em c} & Coluna (de 0 a 7) da posição a verificar. \\
+\hline
+{\em lv} & Linha do vetor direção. \\
+\hline
+{\em cv} & Coluna do vetor direção. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 caso seja possivel, 0 caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8h_a87aa3183cc81202597e561ca60bc802d}\label{estado_8h_a87aa3183cc81202597e561ca60bc802d}} 
+\index{estado.\+h@{estado.\+h}!printa@{printa}}
+\index{printa@{printa}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{printa()}{printa()}}
+{\footnotesize\ttfamily void printa (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Imprime no ecrã o tabuleiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{estado_8h_a8855de670fbc771697d49673058603dc}\label{estado_8h_a8855de670fbc771697d49673058603dc}} 
+\index{estado.\+h@{estado.\+h}!skip\+Botvs\+Jog@{skip\+Botvs\+Jog}}
+\index{skip\+Botvs\+Jog@{skip\+Botvs\+Jog}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{skip\+Botvs\+Jog()}{skipBotvsJog()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} skip\+Botvs\+Jog (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Num jogo entre um jogador e um ro\textquotesingle{}bot\textquotesingle{}, durante o turno do ro\textquotesingle{}bot\textquotesingle{}, verifica se deve saltar a próxima jogada ou até mesmo acabar o jogo. 
+
+Se saltar a próxima jogada, significa que o ro\textquotesingle{}bot\textquotesingle{} vai fazer a sua jogada outravez, se não, o estado não sofre alterações.
+
+Se acabar o jogo, mostra a tela final.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Estado alterado se saltar a próxima jogada e inalterado caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8h_aaad22c61de6c3a7f518f554524787591}\label{estado_8h_aaad22c61de6c3a7f518f554524787591}} 
+\index{estado.\+h@{estado.\+h}!skip\+Jogvs\+Bot@{skip\+Jogvs\+Bot}}
+\index{skip\+Jogvs\+Bot@{skip\+Jogvs\+Bot}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{skip\+Jogvs\+Bot()}{skipJogvsBot()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} skip\+Jogvs\+Bot (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Num jogo entre um jogador e um ro\textquotesingle{}bot\textquotesingle{}, durante o turno do jogador, verifica se deve saltar a próxima jogada ou até mesmo acabar o jogo. 
+
+Se saltar a próxima jogada, o estado não sofre alterações, se não, significa que o ro\textquotesingle{}bot\textquotesingle{} vai fazer a sua jogada.
+
+Se acabar o jogo, mostra a tela final.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Estado alterado se não saltar a próxima jogada e inalterado caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8h_ad2f931bf3cea6fab23ff99f8e5789d7b}\label{estado_8h_ad2f931bf3cea6fab23ff99f8e5789d7b}} 
+\index{estado.\+h@{estado.\+h}!skip\+Jogvs\+Jog@{skip\+Jogvs\+Jog}}
+\index{skip\+Jogvs\+Jog@{skip\+Jogvs\+Jog}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{skip\+Jogvs\+Jog()}{skipJogvsJog()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} skip\+Jogvs\+Jog (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Num jogo entre dois jogadores (não ro\textquotesingle{}bot\textquotesingle{}s), verifica se deve saltar a próxima jogada ou até mesmo acabar o jogo. 
+
+Se saltar a jogada muda a próxima peça.
+
+Se acabar o jogo mostra a tela final.
+
+Se nenhum dos anteriores, devolve o estado inalterado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Estado alterado se saltar a próxima jogada e inalterado caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8h_ab49665f16150e8cb9ffbf799edfecf7e}\label{estado_8h_ab49665f16150e8cb9ffbf799edfecf7e}} 
+\index{estado.\+h@{estado.\+h}!tab\+Inicial@{tab\+Inicial}}
+\index{tab\+Inicial@{tab\+Inicial}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{tab\+Inicial()}{tabInicial()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} tab\+Inicial (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Recomeça o tabuleiro de modo a ter apenas as peças iniciais. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Estado com as peças iniciais. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{estado_8h_aec2bd1773e891408a02b11144361ff54}\label{estado_8h_aec2bd1773e891408a02b11144361ff54}} 
+\index{estado.\+h@{estado.\+h}!virar\+Pecas@{virar\+Pecas}}
+\index{virar\+Pecas@{virar\+Pecas}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{virar\+Pecas()}{virarPecas()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} virar\+Pecas (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e,  }\item[{int}]{l,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Virar todas as peças necessárias numa direção ao fim de uma jogada. 
+
+Chama a funcao \textquotesingle{}virar\+Pecas\+Dir\textquotesingle{} para todas as direcões necessárias (possiveis).
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual. \\
+\hline
+{\em l} & Linha (de 0 a 7) onde foi efetuada a jogada. \\
+\hline
+{\em c} & Coluna (de 0 a 7) onde foi efetuada a jogada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Estado com as respetivas peças alteradas. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{estado_8c_a58ecdeb781e23c61644f01e71dff5e1e}{pos\+Possivel\+Dir}, \hyperlink{estado_8c_a3035bd575bbaa87cc1f5efb3c7389585}{virar\+Pecas\+Dir} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{estado_8h_a3035bd575bbaa87cc1f5efb3c7389585}\label{estado_8h_a3035bd575bbaa87cc1f5efb3c7389585}} 
+\index{estado.\+h@{estado.\+h}!virar\+Pecas\+Dir@{virar\+Pecas\+Dir}}
+\index{virar\+Pecas\+Dir@{virar\+Pecas\+Dir}!estado.\+h@{estado.\+h}}
+\subsubsection{\texorpdfstring{virar\+Pecas\+Dir()}{virarPecasDir()}}
+{\footnotesize\ttfamily \hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO} virar\+Pecas\+Dir (\begin{DoxyParamCaption}\item[{\hyperlink{estado_8h_a857f2529d823a22e6f4a81cf21fb810f}{E\+S\+T\+A\+DO}}]{e,  }\item[{int}]{l,  }\item[{int}]{c,  }\item[{int}]{lv,  }\item[{int}]{cv }\end{DoxyParamCaption})}
+
+
+
+Virar as peças necessárias numa direção ao fim de uma jogada. 
+
+A função só é chamada quando se sabe que a a direcão em questão é possível, por isso começa desde inicio a substituir as peças na direção.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual. \\
+\hline
+{\em l} & Linha (de 0 a 7) onde foi efetuada a jogada. \\
+\hline
+{\em c} & Coluna (de 0 a 7) onde foi efetuada a jogada. \\
+\hline
+{\em lv} & Linha do vetor direção. \\
+\hline
+{\em cv} & Coluna do vetor direção. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Estado com as respetivas peças alteradas. 
+\end{DoxyReturn}
