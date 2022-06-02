@@ -22,7 +22,7 @@ Conjunto de projetos/apontamentos do primeiro grau do meu percurso académico, a
  - [MNOL](https://github.com/AITK42/LEI/tree/main/3o%20Ano/MNOL)
  - [SD](https://github.com/AITK42/LEI/tree/main/3o%20Ano/SD)
 
-  #### 2º Semestre
+  ##### 2º Semestre
  - [ADI](https://github.com/AITK42/LEI/tree/main/3o%20Ano/ADI)
  - [CC](https://github.com/AITK42/LEI/tree/main/3o%20Ano/CC):
    - [TP1](https://github.com/AITK42/LEI/tree/main/3o%20Ano/CC/TP1)
