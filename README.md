@@ -2,13 +2,15 @@
 
 Conjunto de projetos/apontamentos do primeiro grau do meu percurso académico, assim como as respetivas classificações.
 
+### 1º Ano
+ - [LI-II](https://github.com/AITK42/LEI/tree/main/2o%20Ano/LI-II)
+
 ### 2º Ano
  - [RC](https://github.com/AITK42/LEI/tree/main/2o%20Ano/RC):
    - [TP1](https://github.com/AITK42/LEI/tree/main/2o%20Ano/RC/TP1)
    - [TP2](https://github.com/AITK42/LEI/tree/main/2o%20Ano/RC/TP2)
    - [TP3](https://github.com/AITK42/LEI/tree/main/2o%20Ano/RC/TP3)
    - [TP4](https://github.com/AITK42/LEI/tree/main/2o%20Ano/RC/TP4)
- - [LI-II](https://github.com/AITK42/LEI/tree/main/2o%20Ano/LI-II)
  - [POO](https://github.com/AITK42/LEI/tree/main/2o%20Ano/POO)
 
 ### 3º Ano
