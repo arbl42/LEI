@@ -1,5 +1,5 @@
 # LI2 - Laboratórios de Informática II
-Mestrado Integrado em Egenharia Informática (MIEI) </br>
+Mestrado Integrado em Engenharia Informática (MIEI) </br>
 Projeto LI2 (2018/2019) </br>
 
 #### Descrição
