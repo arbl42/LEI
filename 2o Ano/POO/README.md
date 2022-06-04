@@ -1,14 +1,15 @@
-# ProjetoPOO
-POO Project - TrazAqui </br>
-Classification : 12/20
+# POO - Programação Orientada a Objetos
+Mestrado Integrado em Engenharia Informática - 2º ano (2019/2020) </br>
 
-A medicine delivery application
+Projeto POO - TrazAqui </br>
+Classificação : 12/20
 
-Mestrado Integrado em Engenharia Informática - 2º ano (2019/2020)
+#### Descrição
+Aplicação de entregas ao domicílio desenvolvida em Java.
 
-Programação Orientada a Objetos
 
-Authors:
+
+## Autores:
 * Pedro Pereira([@PedroPereira42](https://github.com/PedroPereira42))
 * Ariana Lousada ([@AITK42](https://github.com/AITK42))
 * Sebastião Freitas ([@ElTraffy](https://github.com/ElTraffy))
