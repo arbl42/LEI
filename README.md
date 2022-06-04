@@ -3,7 +3,7 @@
 Conjunto de projetos/apontamentos do primeiro grau do meu percurso académico, assim como as respetivas classificações e autores.
 
 ### 1º Ano
- - [LI-II - Laboratórios de Informática II](https://github.com/AITK42/LEI/tree/main/2o%20Ano/LI-II)
+ - [LI-II - Laboratórios de Informática II](https://github.com/AITK42/LEI/tree/main/1o%20Ano/LI-II)
 
 ### 2º Ano
  - [RC - Redes de Computadores](https://github.com/AITK42/LEI/tree/main/2o%20Ano/RC):
