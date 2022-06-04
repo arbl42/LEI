@@ -1,11 +1,15 @@
-# IA
-IA projects 21/22
+# IA - Inteligência Artificial
+Mestrado Integrado em Engenharia Informática (MIEI) </br>
+Projeto IA (2021/2022)
 
-### Classifications: 
-* 1st Phase:  18/20
-* 2nd Phase:  17/20 
+#### Descrição
+Desenvolvimento de um sistema de inferência de uma aplicação de entregas em Prolog 
 
-# Authors:
+Classificações: 
+* 1ª Fase:  18/20
+* 2ª Fase:  17/20 
+
+# Autores:
 * Miguel Gomes([@MayorX500](https://github.com/MayorX500))
 * Ariana Lousada([@AITK42](https://github.com/AITK42))
 * Rita Lino([@anightatheopera](https://github.com/anightatheopera))
