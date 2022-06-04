@@ -11,7 +11,7 @@ Conjunto de projetos/apontamentos do primeiro grau do meu percurso académico, a
    - [TP2](https://github.com/AITK42/LEI/tree/main/2o%20Ano/RC/TP2)
    - [TP3](https://github.com/AITK42/LEI/tree/main/2o%20Ano/RC/TP3)
    - [TP4](https://github.com/AITK42/LEI/tree/main/2o%20Ano/RC/TP4)
- - [POO](https://github.com/AITK42/LEI/tree/main/2o%20Ano/POO)
+ - [POO - Programação Orientada a Objetos](https://github.com/AITK42/LEI/tree/main/2o%20Ano/POO)
 
 ### 3º Ano
   ##### 1º Semestre
