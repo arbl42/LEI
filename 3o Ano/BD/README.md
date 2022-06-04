@@ -7,7 +7,7 @@ Nome: Spa on the Move </br>
 Classificação : 16/20
 
 #### Descrição 
-  Projeto de desenho de uma base de dados para um serviço de spa domiciliário.
+  Projeto de concepç de uma base de dados para um serviço de spa domiciliário.
 
 
 
