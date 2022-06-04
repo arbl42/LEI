@@ -1,9 +1,12 @@
-# RC
+# RC - Redes de Computadores
+Mestrado Integrado em Engenharia Informática (MIEI) </br>
+2º Ano
 
-Projects made in Redes de Computadores class - 3rd year (2020/2021) </br>
-Overall classification: 16/20
+#### Descrição
+Projetos da unidade curricular Redes de Computadores </br>
+Classificação (global): 16/20
 
-# Authors:
+# Autores:
 * Carlos Gomes([@CGDEX](https://github.com/CGDEX))
 * Ariana Lousada([@AITK42](https://github.com/AITK42))
 * Beatriz Rocha
