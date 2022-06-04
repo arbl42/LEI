@@ -2,7 +2,7 @@
 Mestrado Integrado em Egenharia Informática (MIEI) </br>
 Projeto LI2 (2018/2019) </br>
 
-##### Descrição
+#### Descrição
 Recriação do jogo Reversi em C. </br>
 Classificação: 17/20
 
