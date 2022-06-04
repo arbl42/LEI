@@ -1,15 +1,17 @@
-# BD Project
-
-BD Project - Spa on the Move </br>
-Classification : 16/20
-
-A data base project for a massage delivery service
-
-Mestrado Integrado em Engenharia Informática - 3º ano (2020/2021)
-
+# Projeto BD
+Mestrado Integrado em Engenharia Informática - 3º ano (2020/2021) </br>
 Base de Dados
 
-# Authors:
+
+Nome: Spa on the Move </br>
+Classificação : 16/20
+
+#### Descrição 
+  Projeto de desenho de uma base de dados para um serviço de spa domiciliário.
+
+
+
+# Autores:
 * Márcia Teixeira([@teixeiramarcia](https://github.com/teixeiramarcia))
 * Carolina Vila Chã([@carolinavc99](https://github.com/carolinavc99))
 * Ariana Lousada([@AITK42](https://github.com/AITK42))
