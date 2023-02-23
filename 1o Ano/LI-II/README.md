@@ -8,5 +8,5 @@ Classificação: 17/20
 
 # Autores
 * Romeu Silva ([@xtrigger](https://github.com/xtrigger))
-* Ariana Lousada ([@AITK42](https://github.com/AITK42))
+* Ariana Lousada ([@arbl42](https://github.com/arbl42))
 * Ricardo Carvalho ([@ricardost1](https://github.com/ricardost1))
