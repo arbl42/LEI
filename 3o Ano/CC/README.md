@@ -6,5 +6,5 @@ Classificação (global): 15.6/20
 
 # Autores:
 * Sofia Santos([@RisingFisan](https://github.com/RisingFisan))
-* Ariana Lousada([@AITK42](https://github.com/AITK42))
+* Ariana Lousada([@arbl42](https://github.com/arbl42))
 * Rui Armada([@RuiArmada](https://github.com/RuiArmada))
