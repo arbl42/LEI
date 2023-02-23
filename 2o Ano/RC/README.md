@@ -8,6 +8,6 @@ Classificação (global): 16/20
 
 # Autores:
 * Carlos Gomes([@CGDEX](https://github.com/CGDEX))
-* Ariana Lousada([@AITK42](https://github.com/AITK42))
+* Ariana Lousada([@arbl42](https://github.com/arbl42))
 * Beatriz Rocha
 * Pedro Pereira([@pedropereira98](https://github.com/pedropereira98?tab=repositories))
