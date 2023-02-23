@@ -14,5 +14,5 @@ Classificação : 16/20
 # Autores:
 * Márcia Teixeira([@teixeiramarcia](https://github.com/teixeiramarcia))
 * Carolina Vila Chã([@carolinavc99](https://github.com/carolinavc99))
-* Ariana Lousada([@AITK42](https://github.com/AITK42))
+* Ariana Lousada([@arbl42](https://github.com/arbl42))
 * José Peixoto([@kazoJP](https://github.com/kazoJP))
