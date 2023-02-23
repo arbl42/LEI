@@ -7,7 +7,7 @@ Projeto de análise, tratamento e previsão de dois datasets através da ferrame
 Classificação: 17/20
 
 # Autores:
-* Ariana Lousada([@AITK42](https://github.com/AITK42))
-* João Carvalho([João Carvalho](https://github.com/joaoca93166))
+* Ariana Lousada([@arbl42](https://github.com/arbl42))
+* João Carvalho([@joaoca93166](https://github.com/joaoca93166))
 * Rui Armada([@RuiArmada](https://github.com/RuiArmada))
-* Tiago Sousa([Tiago Sousa](https://github.com/Existency))
+* Tiago Sousa([@Existency](https://github.com/Existency))
