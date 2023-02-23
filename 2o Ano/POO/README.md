@@ -11,5 +11,5 @@ Aplicação de entregas ao domicílio desenvolvida em Java.
 
 ## Autores:
 * Pedro Pereira([@PedroPereira42](https://github.com/PedroPereira42))
-* Ariana Lousada ([@AITK42](https://github.com/AITK42))
+* Ariana Lousada ([@arbl42](https://github.com/arbl42))
 * Sebastião Freitas ([@ElTraffy](https://github.com/ElTraffy))
