@@ -7,7 +7,7 @@ Projetos da unidade curricular Redes de Computadores </br>
 Classificação (global): 16/20
 
 # Autores:
-* Carlos Gomes([@CGDEX](https://github.com/CGDEX))
+* Carlos Gomes([@cgomes-pt](https://github.com/cgomes-pt))
 * Ariana Lousada([@arbl42](https://github.com/arbl42))
 * Beatriz Rocha
 * Pedro Pereira([@pedropereira98](https://github.com/pedropereira98?tab=repositories))
