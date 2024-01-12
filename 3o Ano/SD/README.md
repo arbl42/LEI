@@ -9,7 +9,7 @@ Classificação: 10/20
 
 
 # Autores:
-* Carlos Gomes([@CGDEX](https://github.com/CGDEX))
+* Carlos Gomes([@cgomes-pt](https://github.com/cgomes-pt))
 * Ariana Lousada([@arbl42](https://github.com/arbl42))
 * Tiago Sousa([@Existency](https://github.com/Existency))
 * Márcia Teixeira([@teixeiramarcia](https://github.com/teixeiramarcia))
